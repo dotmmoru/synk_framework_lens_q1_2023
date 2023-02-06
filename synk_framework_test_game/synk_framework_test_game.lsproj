@@ -3,7 +3,7 @@
     "document_id": "gR_5yN57srX9o5ey1ZhU",
     "original_document_id": "gR_5yN57srX9o5ey1ZhU",
     "version": "29",
-    "lastChanged": "1675689846448",
+    "lastChanged": "1675691368233",
     "preview": "icon.png",
     "videoPreview": "preview.mp4",
     "videoPreviewUpdateTime": "",
@@ -71,6 +71,10 @@
                     ],
                     [
                         "Scene Resources"
+                    ],
+                    [
+                        "Scripts",
+                        "RPS_Button"
                     ],
                     [
                         "Shared Resources"
@@ -236,6 +240,9 @@
                         "Torus"
                     ],
                     [
+                        "Sync Framework"
+                    ],
+                    [
                         "Sync Framework",
                         "Core"
                     ],
@@ -247,6 +254,9 @@
                     [
                         "Sync Framework",
                         "Utils"
+                    ],
+                    [
+                        "Sync Framework Examples"
                     ],
                     [
                         "Sync Framework Examples",
@@ -272,31 +282,28 @@
                     ],
                     [
                         "Sync Framework Examples",
-                        "Shared Value Examples"
-                    ],
-                    [
-                        "Sync Framework Examples",
-                        "Shared Value Examples",
-                        "Shared Color Picker"
-                    ],
-                    [
-                        "Sync Framework Examples",
-                        "Shared Value Examples",
-                        "Simple Shared Score"
-                    ],
-                    [
-                        "Sync Framework Examples",
                         "Standalone Entity Examples"
                     ],
                     [
+                        "Textures"
+                    ],
+                    [
+                        "Textures",
+                        "MyGame",
+                        "paper"
+                    ],
+                    [
+                        "Textures",
+                        "MyGame",
+                        "rock"
+                    ],
+                    [
+                        "Textures",
+                        "MyGame",
+                        "scisors"
+                    ],
+                    [
                         "Toolbelt"
-                    ],
-                    [
-                        "Tween"
-                    ],
-                    [
-                        "Tween",
-                        "TweenTypes"
                     ],
                     [
                         "Tween",
@@ -346,7 +353,6 @@
                     "1652828673452537:256740",
                     "1653085105775207:104265",
                     "1653085285887085:269486",
-                    "1653451375924174:620867",
                     "1653453474249108:1692876",
                     "1653453474250326:1692878",
                     "1653453474255912:1692897",
@@ -357,7 +363,6 @@
                     "1653697646824555:2354986",
                     "1653697909681102:2690967",
                     "1653697909696725:2690990",
-                    "1654198318318327:2309186",
                     "1654198816315634:2421377",
                     "1654198816318907:2421381",
                     "1654198816379138:2421422",
@@ -368,6 +373,7 @@
                     "1654198816729964:2421741",
                     "1654198816785062:2421794",
                     "1654198816911304:2421960",
+                    "1654210959707754:1679583",
                     "1654210959723239:1679607",
                     "1654210959778173:1679814",
                     "1654210959787687:1679831",
@@ -378,7 +384,6 @@
                     "1654213744818756:4332194",
                     "1654213744823014:4332211",
                     "1654214711252060:5301535",
-                    "1654216495278509:501728",
                     "1654228900288277:889977",
                     "1654229085645519:1040875",
                     "1654229088567003:1073613",
@@ -453,7 +458,8 @@
                     "1666649042806820:386247",
                     "1667249006723119:2262560",
                     "1667249006729644:2262621",
-                    "1667249126941673:2521186"
+                    "1667249126941673:2521186",
+                    "1675689813955082:449640"
                 ]
             ],
             "selectionSetList": ""
@@ -514,7 +520,15 @@
                     "1654900992701249:1318046",
                     "1655487017041253:2480534",
                     "1656108234827079:1944901",
-                    "1656109749446569:3198947"
+                    "1656109749446569:3198947",
+                    "1675691040256175:779092",
+                    "1675691040271095:779216",
+                    "1675691071667915:825012",
+                    "1675691071680630:825137",
+                    "1675691081772651:867148",
+                    "1675691081785270:867273",
+                    "1675691167769122:993611",
+                    "1675691171124707:1014258"
                 ]
             ]
         },
@@ -1647,6 +1661,38 @@
                     "sourceFilePath": "",
                     "additionalProperties": "",
                     "flags": "1"
+                },
+                {
+                    "resId": "516",
+                    "uid": "1675690845421320:616625",
+                    "name": "Files\/File933.png",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "517",
+                    "uid": "1675690845524901:616637",
+                    "name": "Files\/File936.png",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "518",
+                    "uid": "1675690845606208:616648",
+                    "name": "Files\/File939.png",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "519",
+                    "uid": "1675691114273516:927006",
+                    "name": "Files\/File945.js",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
                 }
             ],
             "MaterialUpdateManager": {
@@ -1665,6 +1711,20 @@
                 "ScreenTransform": {
                     "uidData": [
                         {
+                            "k": "1675689813957013:449642",
+                            "v": {
+                                "isBasicMode": "true",
+                                "basicModeSetup": {
+                                    "fixWidth": "false",
+                                    "fixHeight": "false",
+                                    "attachBottom": "false",
+                                    "attachLeft": "false",
+                                    "attachRight": "false",
+                                    "attachTop": "false"
+                                }
+                            }
+                        },
+                        {
                             "k": "1675689814012511:449771",
                             "v": {
                                 "isBasicMode": "true",
@@ -1673,6 +1733,62 @@
                                     "fixHeight": "false",
                                     "attachBottom": "true",
                                     "attachLeft": "true",
+                                    "attachRight": "false",
+                                    "attachTop": "false"
+                                }
+                            }
+                        },
+                        {
+                            "k": "1675691040206210:778965",
+                            "v": {
+                                "isBasicMode": "true",
+                                "basicModeSetup": {
+                                    "fixWidth": "false",
+                                    "fixHeight": "false",
+                                    "attachBottom": "false",
+                                    "attachLeft": "false",
+                                    "attachRight": "false",
+                                    "attachTop": "false"
+                                }
+                            }
+                        },
+                        {
+                            "k": "1675691040256175:779092",
+                            "v": {
+                                "isBasicMode": "true",
+                                "basicModeSetup": {
+                                    "fixWidth": "false",
+                                    "fixHeight": "false",
+                                    "attachBottom": "false",
+                                    "attachLeft": "false",
+                                    "attachRight": "false",
+                                    "attachTop": "false"
+                                }
+                            }
+                        },
+                        {
+                            "k": "1675691071667915:825012",
+                            "v": {
+                                "isBasicMode": "true",
+                                "basicModeSetup": {
+                                    "fixWidth": "false",
+                                    "fixHeight": "false",
+                                    "attachBottom": "false",
+                                    "attachLeft": "false",
+                                    "attachRight": "false",
+                                    "attachTop": "false"
+                                }
+                            }
+                        },
+                        {
+                            "k": "1675691081772651:867148",
+                            "v": {
+                                "isBasicMode": "true",
+                                "basicModeSetup": {
+                                    "fixWidth": "false",
+                                    "fixHeight": "false",
+                                    "attachBottom": "false",
+                                    "attachLeft": "false",
                                     "attachRight": "false",
                                     "attachTop": "false"
                                 }
@@ -2080,7 +2196,13 @@
                 "392": "1667933410359504:184400",
                 "393": "1675689813945651:449583",
                 "394": "1675689813955082:449640",
-                "395": "1675689814012194:449770"
+                "395": "1675689814012194:449770",
+                "396": "1675691007761852:718347",
+                "397": "1675691023246603:777378",
+                "398": "1675691040203317:778963",
+                "399": "1675691040255992:779091",
+                "400": "1675691071618654:824771",
+                "401": "1675691081750920:866909"
             }
         },
         "LayerComponent": {
@@ -2856,6 +2978,58 @@
                 {
                     "k": "932",
                     "v": "Files\/File932.pvr"
+                },
+                {
+                    "k": "933",
+                    "v": "Files\/File933.pvr"
+                },
+                {
+                    "k": "934",
+                    "v": "Files\/File934.png"
+                },
+                {
+                    "k": "935",
+                    "v": "Files\/File935.png"
+                },
+                {
+                    "k": "936",
+                    "v": "Files\/File936.pvr"
+                },
+                {
+                    "k": "937",
+                    "v": "Files\/File937.png"
+                },
+                {
+                    "k": "938",
+                    "v": "Files\/File938.png"
+                },
+                {
+                    "k": "939",
+                    "v": "Files\/File939.pvr"
+                },
+                {
+                    "k": "940",
+                    "v": "Files\/File940.png"
+                },
+                {
+                    "k": "941",
+                    "v": "Files\/File941.png"
+                },
+                {
+                    "k": "942",
+                    "v": "Files\/File942.pvr"
+                },
+                {
+                    "k": "943",
+                    "v": "Files\/File943.pvr"
+                },
+                {
+                    "k": "944",
+                    "v": "Files\/File944.pvr"
+                },
+                {
+                    "k": "945",
+                    "v": "Files\/File945.js"
                 }
             ]
         },
@@ -3505,6 +3679,30 @@
                     {
                         "k": "215",
                         "v": "Resource.ds_store"
+                    },
+                    {
+                        "k": "216",
+                        "v": "Textures\/MyGame"
+                    },
+                    {
+                        "k": "217",
+                        "v": "Textures\/MyGame\/scisors.png"
+                    },
+                    {
+                        "k": "218",
+                        "v": "Textures\/MyGame\/rock.png"
+                    },
+                    {
+                        "k": "219",
+                        "v": "Textures\/MyGame\/paper.png"
+                    },
+                    {
+                        "k": "220",
+                        "v": "Scripts"
+                    },
+                    {
+                        "k": "221",
+                        "v": "Scripts\/RPS_Button.js"
                     }
                 ],
                 "hashes": [
@@ -4091,18 +4289,34 @@
                     {
                         "k": "215",
                         "v": "1dd6d0fe35b87db6b8e219425b052c20"
+                    },
+                    {
+                        "k": "217",
+                        "v": "8de48ca65c47c595d0a711031db43ed4"
+                    },
+                    {
+                        "k": "218",
+                        "v": "6b95cda4f8d6bb93355767c17475403d"
+                    },
+                    {
+                        "k": "219",
+                        "v": "6a2887be8afe4a4a3c643642c1611370"
+                    },
+                    {
+                        "k": "221",
+                        "v": "1e704364cdc67f61fc795f7aac756983"
                     }
                 ],
                 "publicState": {
                     "tree": {
                         "isFolder": "true",
-                        "lastModified": "2023-01-12T13:55:26",
+                        "lastModified": "2023-02-06T15:45:11",
                         "name": "Public",
-                        "hash": "693f9815d3defbeec1dffde6bbe63f21",
+                        "hash": "784af11ff064b5519e6b9cf5f8d0548f",
                         "children": [
                             {
                                 "isFolder": "true",
-                                "lastModified": "2023-01-12T13:43:56",
+                                "lastModified": "2023-02-06T14:05:09",
                                 "name": "Asset Library Resources",
                                 "hash": "4fd6a9c6cf93a7e4bbf920c64f3bba38",
                                 "children": [
@@ -4124,7 +4338,7 @@
                             },
                             {
                                 "isFolder": "true",
-                                "lastModified": "2023-01-12T13:43:56",
+                                "lastModified": "2023-02-06T14:05:09",
                                 "name": "Avatar Controller",
                                 "hash": "9beb9c4ca8bc7b9dbc86caa9a468f489",
                                 "children": [
@@ -4144,7 +4358,7 @@
                                     },
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2023-01-12T13:43:56",
+                                        "lastModified": "2023-02-06T14:05:09",
                                         "name": "Heart Glasses Avatar",
                                         "hash": "dffcc606890e6041fc3f8ed30dd64292",
                                         "children": [
@@ -4164,7 +4378,7 @@
                                             },
                                             {
                                                 "isFolder": "true",
-                                                "lastModified": "2023-01-12T13:56:14",
+                                                "lastModified": "2023-02-06T14:05:09",
                                                 "name": "Materials",
                                                 "hash": "c5b9e075f12acbf014d355263abc2d7f",
                                                 "children": [
@@ -4193,7 +4407,7 @@
                                             },
                                             {
                                                 "isFolder": "true",
-                                                "lastModified": "2023-01-12T13:43:56",
+                                                "lastModified": "2023-02-06T14:05:09",
                                                 "name": "Meshes",
                                                 "hash": "2a7de580652ac0d45cedfa04d33bcaf2",
                                                 "children": [
@@ -4243,7 +4457,7 @@
                                             },
                                             {
                                                 "isFolder": "true",
-                                                "lastModified": "2023-01-12T13:43:56",
+                                                "lastModified": "2023-02-06T14:05:09",
                                                 "name": "Textures",
                                                 "hash": "98709564ca0049ca45c759150ff1754d",
                                                 "children": [
@@ -4283,7 +4497,7 @@
                             },
                             {
                                 "isFolder": "true",
-                                "lastModified": "2023-01-12T13:43:56",
+                                "lastModified": "2023-02-06T14:05:09",
                                 "name": "Hand Avatar",
                                 "hash": "531609d1977824044ba00db1a716bd76",
                                 "children": [
@@ -4296,7 +4510,7 @@
                                     },
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2023-01-12T13:43:56",
+                                        "lastModified": "2023-02-06T14:05:09",
                                         "name": "Hand Tracking Assets",
                                         "hash": "59adb24ef3cdbe0297f05b395827453f",
                                         "children": [
@@ -4311,7 +4525,7 @@
                                     },
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2023-01-12T13:56:15",
+                                        "lastModified": "2023-02-06T14:05:09",
                                         "name": "Materials",
                                         "hash": "4e4cc53a04a63a43e7f915fbfa548af6",
                                         "children": [
@@ -4340,7 +4554,7 @@
                                     },
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2023-01-12T13:43:56",
+                                        "lastModified": "2023-02-06T14:05:09",
                                         "name": "Meshes",
                                         "hash": "549c92be6560f1e1c1cb3c010bdbdc45",
                                         "children": [
@@ -4353,7 +4567,7 @@
                                             },
                                             {
                                                 "isFolder": "true",
-                                                "lastModified": "2023-01-12T13:43:56",
+                                                "lastModified": "2023-02-06T14:05:09",
                                                 "name": "LeftHandModel",
                                                 "hash": "1d856174497c1e6a695d360ad926a911",
                                                 "children": [
@@ -4366,7 +4580,7 @@
                                                     },
                                                     {
                                                         "isFolder": "true",
-                                                        "lastModified": "2023-01-12T13:43:56",
+                                                        "lastModified": "2023-02-06T14:05:09",
                                                         "name": "Meshes",
                                                         "hash": "d2c90cce96ec790e44420e2fc727aaa0",
                                                         "children": [
@@ -4390,7 +4604,7 @@
                                             },
                                             {
                                                 "isFolder": "true",
-                                                "lastModified": "2023-01-12T13:43:56",
+                                                "lastModified": "2023-02-06T14:05:09",
                                                 "name": "RightHandModel",
                                                 "hash": "85fd38e6b0bccc3c0c3e0f88c82438ad",
                                                 "children": [
@@ -4403,7 +4617,7 @@
                                                     },
                                                     {
                                                         "isFolder": "true",
-                                                        "lastModified": "2023-01-12T13:43:56",
+                                                        "lastModified": "2023-02-06T14:05:09",
                                                         "name": "Meshes",
                                                         "hash": "6dbc1696507ef1bcfd89e73a68028d9b",
                                                         "children": [
@@ -4429,7 +4643,7 @@
                                     },
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2023-01-12T13:43:56",
+                                        "lastModified": "2023-02-06T14:05:09",
                                         "name": "Prefabs",
                                         "hash": "91a6f8fd7c82e7460b94d2f5ed415c5b",
                                         "children": [
@@ -4458,7 +4672,7 @@
                                     },
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2023-01-12T13:43:56",
+                                        "lastModified": "2023-02-06T14:05:09",
                                         "name": "Scripts",
                                         "hash": "eefb949c6df14cf66f960ff0955e41dd",
                                         "children": [
@@ -4496,7 +4710,7 @@
                             },
                             {
                                 "isFolder": "true",
-                                "lastModified": "2023-01-12T13:43:56",
+                                "lastModified": "2023-02-06T14:05:09",
                                 "name": "Scene Resources",
                                 "hash": "59adb24ef3cdbe0297f05b395827453f",
                                 "children": [
@@ -4511,7 +4725,29 @@
                             },
                             {
                                 "isFolder": "true",
-                                "lastModified": "2023-01-12T13:43:56",
+                                "lastModified": "2023-02-06T15:45:33",
+                                "name": "Scripts",
+                                "hash": "29c02337766afb2181bcf26a7292e35d",
+                                "children": [
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2023-02-06T15:45:06",
+                                        "name": "folder.lock",
+                                        "hash": "d41d8cd98f00b204e9800998ecf8427e",
+                                        "children": ""
+                                    },
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2023-02-06T15:49:11",
+                                        "name": "RPS_Button.js",
+                                        "hash": "1e704364cdc67f61fc795f7aac756983",
+                                        "children": ""
+                                    }
+                                ]
+                            },
+                            {
+                                "isFolder": "true",
+                                "lastModified": "2023-02-06T14:05:09",
                                 "name": "Shared Resources",
                                 "hash": "4f60dad7b149c1948acd07b69234eccd",
                                 "children": [
@@ -4524,7 +4760,7 @@
                                     },
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2023-01-12T13:56:15",
+                                        "lastModified": "2023-02-06T14:05:09",
                                         "name": "Materials",
                                         "hash": "198ec72af9adb1c33f2b0ec7e4548e51",
                                         "children": [
@@ -4567,7 +4803,7 @@
                                     },
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2023-01-12T13:43:56",
+                                        "lastModified": "2023-02-06T14:05:09",
                                         "name": "Meshes",
                                         "hash": "2e4647a8800e8809f9ae8f4602f88cb1",
                                         "children": [
@@ -4640,13 +4876,13 @@
                             },
                             {
                                 "isFolder": "true",
-                                "lastModified": "2023-01-12T13:43:56",
+                                "lastModified": "2023-02-06T14:05:09",
                                 "name": "Sync Framework",
                                 "hash": "a3803051790b60534c6bdac55d220c90",
                                 "children": [
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2023-01-12T13:43:56",
+                                        "lastModified": "2023-02-06T14:05:09",
                                         "name": "Components",
                                         "hash": "716f3ddc0d79afe8db990e4487326514",
                                         "children": [
@@ -4666,7 +4902,7 @@
                                             },
                                             {
                                                 "isFolder": "true",
-                                                "lastModified": "2023-01-12T13:43:56",
+                                                "lastModified": "2023-02-06T14:05:09",
                                                 "name": "Sync Helpers",
                                                 "hash": "bb827b3a39fc9567f14aa1dd4a60ee7c",
                                                 "children": [
@@ -4732,7 +4968,7 @@
                                     },
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2023-01-12T13:43:56",
+                                        "lastModified": "2023-02-06T14:05:09",
                                         "name": "Core",
                                         "hash": "a2adca23192b466d4403acf5c91b87fd",
                                         "children": [
@@ -4803,13 +5039,13 @@
                                     },
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2023-01-12T13:43:56",
+                                        "lastModified": "2023-02-06T14:05:09",
                                         "name": "Resources",
                                         "hash": "3b78a13c6bd335cc4b9a2dd0c6c4ea14",
                                         "children": [
                                             {
                                                 "isFolder": "true",
-                                                "lastModified": "2023-01-12T13:43:56",
+                                                "lastModified": "2023-02-06T14:05:09",
                                                 "name": "Colocated Resources",
                                                 "hash": "8d265b006976fd5842ed57118f4aeda1",
                                                 "children": [
@@ -4861,7 +5097,7 @@
                                     },
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2023-01-12T13:43:56",
+                                        "lastModified": "2023-02-06T14:05:09",
                                         "name": "Utils",
                                         "hash": "5e55bd31d67eb92beac258a0ae4faa9e",
                                         "children": [
@@ -4892,13 +5128,13 @@
                             },
                             {
                                 "isFolder": "true",
-                                "lastModified": "2023-01-12T13:43:56",
+                                "lastModified": "2023-02-06T14:05:09",
                                 "name": "Sync Framework Examples",
                                 "hash": "66d215520336f56493482e36248a7677",
                                 "children": [
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2023-01-12T13:43:56",
+                                        "lastModified": "2023-02-06T14:05:09",
                                         "name": "Air Hockey",
                                         "hash": "fd921a26845ff2e88cb25454e98610cf",
                                         "children": [
@@ -4911,7 +5147,7 @@
                                             },
                                             {
                                                 "isFolder": "true",
-                                                "lastModified": "2023-01-12T13:56:15",
+                                                "lastModified": "2023-02-06T14:05:09",
                                                 "name": "Resources",
                                                 "hash": "ae59c63d1721b0333fc159cab73ddd13",
                                                 "children": [
@@ -4961,7 +5197,7 @@
                                             },
                                             {
                                                 "isFolder": "true",
-                                                "lastModified": "2023-01-12T13:43:56",
+                                                "lastModified": "2023-02-06T14:05:09",
                                                 "name": "Scripts",
                                                 "hash": "bb4f32a0356d9fbc338de8235424ceb0",
                                                 "children": [
@@ -4999,13 +5235,13 @@
                                     },
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2023-01-12T13:43:56",
+                                        "lastModified": "2023-02-06T14:05:09",
                                         "name": "Events Examples",
                                         "hash": "d0cd649d3c742a36c1e341756276ed45",
                                         "children": [
                                             {
                                                 "isFolder": "true",
-                                                "lastModified": "2023-01-12T13:43:56",
+                                                "lastModified": "2023-02-06T14:05:09",
                                                 "name": "Complex Message Event",
                                                 "hash": "f316d98ef37203a3d337424c0d750fa5",
                                                 "children": [
@@ -5041,7 +5277,7 @@
                                             },
                                             {
                                                 "isFolder": "true",
-                                                "lastModified": "2023-01-12T13:43:56",
+                                                "lastModified": "2023-02-06T14:05:09",
                                                 "name": "Modification Events",
                                                 "hash": "0f349f957ae99efceff760a9875dac5e",
                                                 "children": [
@@ -5070,7 +5306,7 @@
                                             },
                                             {
                                                 "isFolder": "true",
-                                                "lastModified": "2023-01-12T13:43:56",
+                                                "lastModified": "2023-02-06T14:05:09",
                                                 "name": "Play Tween On Event",
                                                 "hash": "8201de3d516eb183d13d493fda5752dd",
                                                 "children": [
@@ -5101,7 +5337,7 @@
                                     },
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2023-01-12T13:43:56",
+                                        "lastModified": "2023-02-06T14:05:09",
                                         "name": "Helpers",
                                         "hash": "8d4dfebf427d680b3ad00f90536b7c37",
                                         "children": [
@@ -5158,7 +5394,7 @@
                                     },
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2023-01-12T13:43:56",
+                                        "lastModified": "2023-02-06T14:05:09",
                                         "name": "Persistence Examples",
                                         "hash": "81ffdfae166e1db4a5291df579cf562d",
                                         "children": [
@@ -5171,7 +5407,7 @@
                                             },
                                             {
                                                 "isFolder": "true",
-                                                "lastModified": "2023-01-12T13:43:56",
+                                                "lastModified": "2023-02-06T14:05:09",
                                                 "name": "Instantiated Entity Persistence",
                                                 "hash": "49b40111940a42d8abe5dbbb8b293d30",
                                                 "children": [
@@ -5200,7 +5436,7 @@
                                             },
                                             {
                                                 "isFolder": "true",
-                                                "lastModified": "2023-01-12T13:43:56",
+                                                "lastModified": "2023-02-06T14:05:09",
                                                 "name": "Persistent Player Owned",
                                                 "hash": "460b628df292ef0fe879266470698065",
                                                 "children": [
@@ -5243,7 +5479,7 @@
                                             },
                                             {
                                                 "isFolder": "true",
-                                                "lastModified": "2023-01-12T13:43:56",
+                                                "lastModified": "2023-02-06T14:05:09",
                                                 "name": "Scoreboard",
                                                 "hash": "47d60458570c3fa54f3d791c8150dce8",
                                                 "children": [
@@ -5267,7 +5503,7 @@
                                     },
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2023-01-12T13:43:56",
+                                        "lastModified": "2023-02-06T14:05:09",
                                         "name": "Shared Value Examples",
                                         "hash": "8485871084ec273c08d578b4274336c1",
                                         "children": [
@@ -5280,7 +5516,7 @@
                                             },
                                             {
                                                 "isFolder": "true",
-                                                "lastModified": "2023-01-12T13:56:15",
+                                                "lastModified": "2023-02-06T14:05:09",
                                                 "name": "Shared Color Picker",
                                                 "hash": "fa6f186fd0dda076b5f6435384222c18",
                                                 "children": [
@@ -5337,7 +5573,7 @@
                                             },
                                             {
                                                 "isFolder": "true",
-                                                "lastModified": "2023-01-12T13:56:15",
+                                                "lastModified": "2023-02-06T14:05:09",
                                                 "name": "Simple Shared Score",
                                                 "hash": "16b88ab22e2f9ed44eac50c523014faf",
                                                 "children": [
@@ -5396,7 +5632,7 @@
                                     },
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2023-01-12T13:43:56",
+                                        "lastModified": "2023-02-06T14:05:09",
                                         "name": "Standalone Entity Examples",
                                         "hash": "abde318a1e63d2aa1d3f06c86a606b79",
                                         "children": [
@@ -5420,9 +5656,9 @@
                             },
                             {
                                 "isFolder": "true",
-                                "lastModified": "2023-01-12T13:55:26",
+                                "lastModified": "2023-02-06T15:40:39",
                                 "name": "Textures",
-                                "hash": "c15cd7deee69c4d0721c5c45ad16c53c",
+                                "hash": "3b3cc4e43e2c4a64caa5207d1b70e7b7",
                                 "children": [
                                     {
                                         "isFolder": "false",
@@ -5437,12 +5673,48 @@
                                         "name": "monitor_color.png",
                                         "hash": "223fa414eb6cd93ec6501b68c394d689",
                                         "children": ""
+                                    },
+                                    {
+                                        "isFolder": "true",
+                                        "lastModified": "2023-02-06T15:40:45",
+                                        "name": "MyGame",
+                                        "hash": "6c9b7e7df5243d3f436119a4bcce64d1",
+                                        "children": [
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2023-02-06T15:40:35",
+                                                "name": "folder.lock",
+                                                "hash": "d41d8cd98f00b204e9800998ecf8427e",
+                                                "children": ""
+                                            },
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2023-02-06T15:39:05",
+                                                "name": "paper.png",
+                                                "hash": "6a2887be8afe4a4a3c643642c1611370",
+                                                "children": ""
+                                            },
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2023-02-06T15:38:48",
+                                                "name": "rock.png",
+                                                "hash": "6b95cda4f8d6bb93355767c17475403d",
+                                                "children": ""
+                                            },
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2023-02-06T15:38:57",
+                                                "name": "scisors.png",
+                                                "hash": "8de48ca65c47c595d0a711031db43ed4",
+                                                "children": ""
+                                            }
+                                        ]
                                     }
                                 ]
                             },
                             {
                                 "isFolder": "true",
-                                "lastModified": "2023-01-12T13:56:14",
+                                "lastModified": "2023-02-06T14:05:09",
                                 "name": "Toolbelt",
                                 "hash": "2f60d9809165d5c879828a97758a0e56",
                                 "children": [
@@ -5485,7 +5757,7 @@
                             },
                             {
                                 "isFolder": "true",
-                                "lastModified": "2023-01-12T13:43:56",
+                                "lastModified": "2023-02-06T14:05:09",
                                 "name": "Tween",
                                 "hash": "c48c2c6b09e37cae64bf74e65ca709a8",
                                 "children": [
@@ -5512,7 +5784,7 @@
                                     },
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2023-01-12T13:43:56",
+                                        "lastModified": "2023-02-06T14:05:09",
                                         "name": "TweenTypes",
                                         "hash": "4086612f95b066f81849424d82526c44",
                                         "children": [
@@ -5525,7 +5797,7 @@
                                             },
                                             {
                                                 "isFolder": "true",
-                                                "lastModified": "2023-01-12T13:43:56",
+                                                "lastModified": "2023-02-06T14:05:09",
                                                 "name": "Legacy",
                                                 "hash": "633ec9f18494495c1cb1cc3afc0dd9c7",
                                                 "children": [
@@ -5591,7 +5863,7 @@
                                     },
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2023-01-12T13:43:56",
+                                        "lastModified": "2023-02-06T14:05:09",
                                         "name": "Visual Scripting Custom Nodes",
                                         "hash": "90e6b8b415271474fc299c78a4681960",
                                         "children": [
@@ -8925,6 +9197,70 @@
                                 "additional": {
                                     "originHash": "223fa414eb6cd93ec6501b68c394d689"
                                 }
+                            },
+                            {
+                                "name": "MyGame",
+                                "type": "0",
+                                "subtype": "-1",
+                                "resourceId": "-1",
+                                "dependency": "0",
+                                "hidden": "false",
+                                "uid": "-1:-1",
+                                "fileId": "18446744073709551615",
+                                "originalId": "18446744073709551615",
+                                "publicId": "216",
+                                "source": "",
+                                "additional": "",
+                                "resources": [
+                                    {
+                                        "name": "scisors",
+                                        "type": "1",
+                                        "subtype": "9",
+                                        "resourceId": "516",
+                                        "dependency": "0",
+                                        "hidden": "false",
+                                        "uid": "1675690845421320:616625",
+                                        "fileId": "933",
+                                        "originalId": "934",
+                                        "publicId": "217",
+                                        "source": "C:\/Users\/Pavel Ivasiuk\/Downloads\/scisors.png",
+                                        "additional": {
+                                            "originHash": "8de48ca65c47c595d0a711031db43ed4"
+                                        }
+                                    },
+                                    {
+                                        "name": "rock",
+                                        "type": "1",
+                                        "subtype": "9",
+                                        "resourceId": "517",
+                                        "dependency": "0",
+                                        "hidden": "false",
+                                        "uid": "1675690845524901:616637",
+                                        "fileId": "936",
+                                        "originalId": "937",
+                                        "publicId": "218",
+                                        "source": "C:\/Users\/Pavel Ivasiuk\/Downloads\/rock.png",
+                                        "additional": {
+                                            "originHash": "6b95cda4f8d6bb93355767c17475403d"
+                                        }
+                                    },
+                                    {
+                                        "name": "paper",
+                                        "type": "1",
+                                        "subtype": "9",
+                                        "resourceId": "518",
+                                        "dependency": "0",
+                                        "hidden": "false",
+                                        "uid": "1675690845606208:616648",
+                                        "fileId": "939",
+                                        "originalId": "940",
+                                        "publicId": "219",
+                                        "source": "C:\/Users\/Pavel Ivasiuk\/Downloads\/paper.png",
+                                        "additional": {
+                                            "originHash": "6a2887be8afe4a4a3c643642c1611370"
+                                        }
+                                    }
+                                ]
                             }
                         ]
                     },
@@ -8941,6 +9277,36 @@
                         "publicId": "215",
                         "source": "C:\/Users\/Pavel Ivasiuk\/AppData\/Roaming\/Snap\/Lens Studio\/Bundle\/Project Templates\/Sync Framework@4.34.0\/Sync Framework\/Public\/Resource.ds_store",
                         "additional": ""
+                    },
+                    {
+                        "name": "Scripts",
+                        "type": "0",
+                        "subtype": "-1",
+                        "resourceId": "-1",
+                        "dependency": "0",
+                        "hidden": "false",
+                        "uid": "-1:-1",
+                        "fileId": "18446744073709551615",
+                        "originalId": "18446744073709551615",
+                        "publicId": "220",
+                        "source": "",
+                        "additional": "",
+                        "resources": [
+                            {
+                                "name": "RPS_Button",
+                                "type": "4",
+                                "subtype": "0",
+                                "resourceId": "519",
+                                "dependency": "0",
+                                "hidden": "false",
+                                "uid": "1675691114273516:927006",
+                                "fileId": "945",
+                                "originalId": "18446744073709551615",
+                                "publicId": "221",
+                                "source": "C:\/Users\/Pavel Ivasiuk\/AppData\/Local\/Snap\/Lens Studio\/cache\/temp\/StudiopnEMxmbPQSiY\/\/system\/\/emergencyFiles\/emergencyJs.js",
+                                "additional": ""
+                            }
+                        ]
                     }
                 ]
             }
@@ -8948,7 +9314,7 @@
         "InspectorController": {
             "selection": {
                 "objects": [
-                    "1675689814012194:449770"
+                    "1675691081750920:866909"
                 ]
             }
         },
@@ -11267,6 +11633,90 @@
                                     "settings_hash": "2049"
                                 },
                                 "v": "932"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "k": "1675690845421320:616625",
+                    "v": {
+                        "infos": {
+                            "originalSize": "40962",
+                            "compressedSize": "7336",
+                            "originalRAM": "170000",
+                            "compressedRAM": "21672",
+                            "extension": "png",
+                            "settings": {
+                                "isCompressed": "true",
+                                "level": "2",
+                                "type": "1",
+                                "subtype": "9"
+                            }
+                        },
+                        "uncompressed_file": "935",
+                        "compressed_files": [
+                            {
+                                "k": {
+                                    "uncompressed_hash": "8de48ca65c47c595d0a711031db43ed4",
+                                    "settings_hash": "2049"
+                                },
+                                "v": "942"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "k": "1675690845524901:616637",
+                    "v": {
+                        "infos": {
+                            "originalSize": "34291",
+                            "compressedSize": "6264",
+                            "originalRAM": "170000",
+                            "compressedRAM": "21672",
+                            "extension": "png",
+                            "settings": {
+                                "isCompressed": "true",
+                                "level": "2",
+                                "type": "1",
+                                "subtype": "9"
+                            }
+                        },
+                        "uncompressed_file": "938",
+                        "compressed_files": [
+                            {
+                                "k": {
+                                    "uncompressed_hash": "6b95cda4f8d6bb93355767c17475403d",
+                                    "settings_hash": "2049"
+                                },
+                                "v": "943"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "k": "1675690845606208:616648",
+                    "v": {
+                        "infos": {
+                            "originalSize": "45719",
+                            "compressedSize": "7984",
+                            "originalRAM": "170000",
+                            "compressedRAM": "21672",
+                            "extension": "png",
+                            "settings": {
+                                "isCompressed": "true",
+                                "level": "2",
+                                "type": "1",
+                                "subtype": "9"
+                            }
+                        },
+                        "uncompressed_file": "941",
+                        "compressed_files": [
+                            {
+                                "k": {
+                                    "uncompressed_hash": "6a2887be8afe4a4a3c643642c1611370",
+                                    "settings_hash": "2049"
+                                },
+                                "v": "944"
                             }
                         ]
                     }
