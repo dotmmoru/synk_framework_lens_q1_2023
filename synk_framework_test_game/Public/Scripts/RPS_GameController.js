@@ -8,6 +8,26 @@
 //@input Component.Text gameResult
 //@input Component.ScriptComponent[] buttons
 
+
+///////////////////////////////////////////////////////
+var syncEntity = new global.SyncEntity(script);
+
+var scoreProp = global.StorageProperty.manual("score", global.StorageTypes.vec2, 0);
+syncEntity.addStorageProperty(scoreProp);
+
+function addScore(amount) {
+    setScore(scoreProp.currentValue + amount);
+}
+
+
+syncEntity.notifyOnReady(onReady);
+
+function onReady()
+{
+   
+}
+
+///////////////////////////////////////////////////////
 var selectedBtn = -1;
 
 // NEED TO GET USER NAMES 
@@ -25,7 +45,7 @@ function Start()
 
 script.api.OnClick_ReadyButton = function()
 {
-	print("RADY Clicked");
+	print("READY Clicked");
 }
 
 script.api.SelectButton = function(id)
