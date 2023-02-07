@@ -9,16 +9,10 @@
 //@input Component.ScriptComponent[] buttons
 
 ///////////////////////////////////////////////////////
-var syncEntity = new global.SyncEntity(script, null, true);
+var syncEntity = new global.SyncEntity(script);
 
 var scoreProp = global.StorageProperty.manual("score", global.StorageTypes.vec2, new vec2(0,0));
 syncEntity.addStorageProperty(scoreProp);
-
-syncEntity.notifyOnReady(onReady);
-function onReady()
-{
-	syncEntity.sendEvent("onConnectNewUser");
-}
 
 var yourNameProp = global.StorageProperty.manualString("yourName", "");
 syncEntity.addStorageProperty(yourNameProp);
@@ -31,6 +25,38 @@ syncEntity.onEventReceived.add("onConnectNewUser",function()
 	OnConnectNewUser();
 });
 
+syncEntity.notifyOnReady(onReady);
+function onReady()
+{
+	ListenProperties();
+	syncEntity.sendEvent("onConnectNewUser");
+}
+
+function ListenProperties() 
+{
+	var yourNameP = syncEntity.propertySet.getProperty("yourName");
+    if (yourNameP) 
+        yourNameP.onAnyChange.add(SetNamesAndScore);
+
+    var otherNameP = syncEntity.propertySet.getProperty("otherName");
+    if (otherNameP) 
+        otherNameP.onAnyChange.add(SetNamesAndScore);
+
+    var scoreP = syncEntity.propertySet.getProperty("score");
+    if (scoreP) 
+        scoreP.onAnyChange.add(SetNamesAndScore);
+}
+
+function OnConnectNewUser()
+{
+   	script.readyUI.enabled = true;
+	script.gameplayUI.enabled = true;
+	script.gameoverUI.enabled = false;
+	
+	SetTimerText("");
+	GetUserNames();
+}
+
 syncEntity.onEventReceived.add("onClickReady",function() 
 {
 	print("canIModifyStore" + syncEntity.canIModifyStore());
@@ -41,17 +67,6 @@ syncEntity.onEventReceived.add("onClickReady",function()
 		StartGameplay();
 	}
 });
-
-function OnConnectNewUser()
-{
-   	script.readyUI.enabled = true;
-	script.gameplayUI.enabled = true;
-	script.gameoverUI.enabled = false;
-	
-	SetTimerText("");
-	GetUserNames();
-	SetNamesAndScore(0,0);
-}
 
 function addScore(amount) 
 {
@@ -70,7 +85,6 @@ function Start()
 	script.gameoverUI.enabled = false;
 	
 	SetTimerText("");
-	SetNamesAndScore(0,0);
 }
 
 function StartGameplay()
@@ -80,7 +94,6 @@ function StartGameplay()
 	script.gameoverUI.enabled = false;
 	
 	SetTimerText("game");
-	SetNamesAndScore(0,0);
 }
 
 script.api.OnClick_ReadyButton = function()
@@ -112,34 +125,17 @@ function UnSelectAllButtons(selected)
 
 function GetUserNames()
 {
-	if (syncEntity.doIOwnStore()) 
-	{
-		var currentOwner = syncEntity.ownerInfo;
-		script.yourScore.text = currentOwner.displayName;
-		print(currentOwner.displayName);
-		yourNameProp.setPendingValue(currentOwner.displayName);
-	}else 
-	{
-		var userName = global.getUserName();
-
-		if(userName === "")
-			userName = "TEST";
-		print(userName);
-		script.otherScore.text = userName+"";
+	var userName = global.getUserName();
+	if (yourNameProp.currentValue == "")
+		yourNameProp.setPendingValue(userName);
+	else
 		otherNameProp.setPendingValue(userName);
-	}
 }
 
-function SetNamesAndScore(scoreYou, scoreOther)
+function SetNamesAndScore()
 {
-	script.yourScore.text = yourNameProp.currentValue + ": " + scoreYou;
-	script.otherScore.text = otherNameProp.currentValue + ": " + scoreOther;
-}
-
-function SetNames(nameYou, nameOther, scoreYou, scoreOther)
-{
-	script.yourScore.text = nameYou + ": " + scoreYou;
-	script.otherScore.text = nameOther + ": " + scoreOther;
+	script.yourScore.text = yourNameProp.currentValue + ": " + scoreProp.currentValue.x;
+	script.otherScore.text = otherNameProp.currentValue + ": " + scoreProp.currentValue.y;
 }
 
 function SetTimerText(value)

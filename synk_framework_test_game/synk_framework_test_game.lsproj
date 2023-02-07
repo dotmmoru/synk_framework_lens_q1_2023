@@ -3,7 +3,7 @@
     "document_id": "gR_5yN57srX9o5ey1ZhU",
     "original_document_id": "gR_5yN57srX9o5ey1ZhU",
     "version": "29",
-    "lastChanged": "1675792056729",
+    "lastChanged": "1675800731714",
     "preview": "icon.png",
     "videoPreview": "preview.mp4",
     "videoPreviewUpdateTime": "",
@@ -252,9 +252,6 @@
                         "Torus"
                     ],
                     [
-                        "Sync Framework"
-                    ],
-                    [
                         "Sync Framework",
                         "Resources",
                         "Colocated Resources"
@@ -262,9 +259,6 @@
                     [
                         "Sync Framework",
                         "Utils"
-                    ],
-                    [
-                        "Sync Framework Examples"
                     ],
                     [
                         "Sync Framework Examples",
@@ -397,7 +391,6 @@
                     "1654229088567003:1073613",
                     "1654229210270032:1161386",
                     "1654554436734278:263084",
-                    "1654708764207818:127480",
                     "1654708813396587:211065",
                     "1654709399191677:583199",
                     "1654709424963110:622294",
@@ -481,7 +474,7 @@
         },
         "PreviewUiComponent": {
             "preview_descriptor": {
-                "is_capture": "3",
+                "is_capture": "0",
                 "camera_type": "1"
             },
             "show_snap_ui": "true",
@@ -4509,7 +4502,7 @@
                     },
                     {
                         "k": "222",
-                        "v": "526559892961d89bff7c73f4c604f7a4"
+                        "v": "18f79422580bd2ee6f1587b4dc0c3765"
                     },
                     {
                         "k": "223",
@@ -4529,7 +4522,7 @@
                         "isFolder": "true",
                         "lastModified": "2023-02-07T18:12:22",
                         "name": "Public",
-                        "hash": "eca14009243bff0a3d3086ebbc0ecef1",
+                        "hash": "a243d1ded0e66b70c29862f4e6e6071b",
                         "children": [
                             {
                                 "isFolder": "true",
@@ -5626,7 +5619,7 @@
                                 "isFolder": "true",
                                 "lastModified": "2023-02-07T19:26:04",
                                 "name": "Scripts",
-                                "hash": "3b13f763d8acbbdc8bc17da200034544",
+                                "hash": "28a8985121d4677e376a381b02395f5d",
                                 "children": [
                                     {
                                         "isFolder": "false",
@@ -5637,9 +5630,9 @@
                                     },
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2023-02-07T19:41:08",
+                                        "lastModified": "2023-02-07T22:11:44",
                                         "name": "RPS_GameController.js",
-                                        "hash": "526559892961d89bff7c73f4c604f7a4",
+                                        "hash": "18f79422580bd2ee6f1587b4dc0c3765",
                                         "children": ""
                                     },
                                     {
@@ -9617,7 +9610,7 @@
         "InspectorController": {
             "selection": {
                 "objects": [
-                    "1675765051381749:5381070"
+                    "1675689814012194:449770"
                 ]
             }
         },
