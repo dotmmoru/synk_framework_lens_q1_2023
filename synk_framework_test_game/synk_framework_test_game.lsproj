@@ -3,7 +3,7 @@
     "document_id": "gR_5yN57srX9o5ey1ZhU",
     "original_document_id": "gR_5yN57srX9o5ey1ZhU",
     "version": "29",
-    "lastChanged": "1675764762952",
+    "lastChanged": "1675765608049",
     "preview": "icon.png",
     "videoPreview": "preview.mp4",
     "videoPreviewUpdateTime": "",
@@ -473,7 +473,8 @@
                     "1667249006729644:2262621",
                     "1667249126941673:2521186",
                     "1675689813955082:449640",
-                    "1675691040203317:778963"
+                    "1675764018810707:3841352",
+                    "1675764160043955:3977274"
                 ]
             ],
             "selectionSetList": ""
@@ -1873,6 +1874,34 @@
                                     "attachTop": "true"
                                 }
                             }
+                        },
+                        {
+                            "k": "1675765040119853:5339150",
+                            "v": {
+                                "isBasicMode": "true",
+                                "basicModeSetup": {
+                                    "fixWidth": "false",
+                                    "fixHeight": "false",
+                                    "attachBottom": "false",
+                                    "attachLeft": "false",
+                                    "attachRight": "false",
+                                    "attachTop": "true"
+                                }
+                            }
+                        },
+                        {
+                            "k": "1675765051401834:5381307",
+                            "v": {
+                                "isBasicMode": "true",
+                                "basicModeSetup": {
+                                    "fixWidth": "false",
+                                    "fixHeight": "false",
+                                    "attachBottom": "false",
+                                    "attachLeft": "false",
+                                    "attachRight": "false",
+                                    "attachTop": "true"
+                                }
+                            }
                         }
                     ],
                     "generalData": ""
@@ -2285,7 +2314,9 @@
                 "401": "1675691081750920:866909",
                 "402": "1675764018810707:3841352",
                 "403": "1675764160043955:3977274",
-                "404": "1675764647477912:5036911"
+                "404": "1675764647477912:5036911",
+                "405": "1675765040119541:5339149",
+                "406": "1675765051381749:5381070"
             }
         },
         "LayerComponent": {
@@ -4427,7 +4458,7 @@
                     },
                     {
                         "k": "222",
-                        "v": "17617256a354ad832f7ceb15749a9652"
+                        "v": "3f028a3702e22b443beb0fe40a799af8"
                     },
                     {
                         "k": "223",
@@ -4443,7 +4474,7 @@
                         "isFolder": "true",
                         "lastModified": "2023-02-07T10:14:56",
                         "name": "Public",
-                        "hash": "9acde7852f7e0fd106c9f23ab3106230",
+                        "hash": "0c8b3bfed91811663927089dacb24302",
                         "children": [
                             {
                                 "isFolder": "true",
@@ -4858,7 +4889,7 @@
                                 "isFolder": "true",
                                 "lastModified": "2023-02-07T12:05:50",
                                 "name": "Scripts",
-                                "hash": "98263ac3707ea5dfd028a924b1ca44f9",
+                                "hash": "d6678f86cd06f58eb455bd953aa7393e",
                                 "children": [
                                     {
                                         "isFolder": "false",
@@ -4876,9 +4907,9 @@
                                     },
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2023-02-07T12:06:43",
+                                        "lastModified": "2023-02-07T12:23:36",
                                         "name": "RPS_GameController.js",
-                                        "hash": "17617256a354ad832f7ceb15749a9652",
+                                        "hash": "3f028a3702e22b443beb0fe40a799af8",
                                         "children": ""
                                     },
                                     {
@@ -9510,7 +9541,7 @@
         "InspectorController": {
             "selection": {
                 "objects": [
-                    "1675764647477912:5036911"
+                    "1675765051381749:5381070"
                 ]
             }
         },
