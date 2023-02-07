@@ -20,11 +20,19 @@ function addScore(amount) {
 }
 
 
+
+
 syncEntity.notifyOnReady(onReady);
 
 function onReady()
 {
-   
+   	script.readyUI.enabled = false;
+	script.gameplayUI.enabled = false;
+	script.gameoverUI.enabled = false;
+	
+	SetTimerText("");
+	GetUserNames();
+	SetNamesAndScore(0,0);
 }
 
 ///////////////////////////////////////////////////////
@@ -36,10 +44,11 @@ var otherName = "Other";
 
 function Start()
 {
-	//script.readyUI.enabled = true;
+	script.readyUI.enabled = false;
 	script.gameplayUI.enabled = false;
+	script.gameoverUI.enabled = false;
+	
 	SetTimerText("");
-	GetUserNames();
 	SetNamesAndScore(0,0);
 }
 

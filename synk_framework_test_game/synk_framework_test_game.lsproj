@@ -3,7 +3,7 @@
     "document_id": "gR_5yN57srX9o5ey1ZhU",
     "original_document_id": "gR_5yN57srX9o5ey1ZhU",
     "version": "29",
-    "lastChanged": "1675766055309",
+    "lastChanged": "1675780792314",
     "preview": "icon.png",
     "videoPreview": "preview.mp4",
     "videoPreviewUpdateTime": "",
@@ -248,9 +248,6 @@
                         "Torus"
                     ],
                     [
-                        "Sync Framework"
-                    ],
-                    [
                         "Sync Framework",
                         "Core"
                     ],
@@ -262,9 +259,6 @@
                     [
                         "Sync Framework",
                         "Utils"
-                    ],
-                    [
-                        "Sync Framework Examples"
                     ],
                     [
                         "Sync Framework Examples",
@@ -282,15 +276,7 @@
                     ],
                     [
                         "Sync Framework Examples",
-                        "Helpers"
-                    ],
-                    [
-                        "Sync Framework Examples",
                         "Persistence Examples"
-                    ],
-                    [
-                        "Sync Framework Examples",
-                        "Standalone Entity Examples"
                     ],
                     [
                         "Textures"
@@ -402,11 +388,9 @@
                     "1654229088567003:1073613",
                     "1654229210270032:1161386",
                     "1654554436734278:263084",
-                    "1654708764207818:127480",
                     "1654708813396587:211065",
                     "1654709399191677:583199",
                     "1654709424963110:622294",
-                    "1654709584844076:731768",
                     "1654710164990842:1093444",
                     "1654710164994782:1093480",
                     "1654711437012778:2516494",
@@ -419,12 +403,10 @@
                     "1654899377694832:132484",
                     "1654899377698187:132488",
                     "1654899377706152:132522",
-                    "1655326614713697:510466",
                     "1655333671145203:4010390",
                     "1655335615934719:6995552",
                     "1655336029548794:7614954",
                     "1655409571732216:422459",
-                    "1655498765707664:799972",
                     "1656021847999960:852853",
                     "1656021848030383:853046",
                     "1656021848031197:853048",
@@ -460,9 +442,6 @@
                     "1661897236750967:336542",
                     "1661897666470254:636432",
                     "1665090843845440:730367",
-                    "1665090858455849:731219",
-                    "1665095069430068:2350757",
-                    "1665095084376012:2352513",
                     "1665095710468096:3758391",
                     "1665095711838671:3810042",
                     "1665775786657762:1122443",
@@ -4504,7 +4483,7 @@
                     },
                     {
                         "k": "222",
-                        "v": "6e46c5d6570e0db807bbd984799a9efd"
+                        "v": "8650a84d462c99472965fb107479ac64"
                     },
                     {
                         "k": "223",
@@ -4520,7 +4499,7 @@
                         "isFolder": "true",
                         "lastModified": "2023-02-07T10:14:56",
                         "name": "Public",
-                        "hash": "50e571f3740c4ebccea98746c5ad88e4",
+                        "hash": "d08549f8f217bf96d4d6212190299b5e",
                         "children": [
                             {
                                 "isFolder": "true",
@@ -4935,7 +4914,7 @@
                                 "isFolder": "true",
                                 "lastModified": "2023-02-07T12:05:50",
                                 "name": "Scripts",
-                                "hash": "281a5dff52f9786c009affed0afdcbe3",
+                                "hash": "0e154962c4886232a1f4ae592a7572b1",
                                 "children": [
                                     {
                                         "isFolder": "false",
@@ -4953,9 +4932,9 @@
                                     },
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2023-02-07T12:34:02",
+                                        "lastModified": "2023-02-07T16:35:27",
                                         "name": "RPS_GameController.js",
-                                        "hash": "6e46c5d6570e0db807bbd984799a9efd",
+                                        "hash": "8650a84d462c99472965fb107479ac64",
                                         "children": ""
                                     },
                                     {
@@ -9586,8 +9565,16 @@
         },
         "InspectorController": {
             "selection": {
-                "objects": [
-                    "1675691023246603:777378"
+                "resources": [
+                    {
+                        "uid": "1655499462630141:1074589",
+                        "path_list": [
+                            "Sync Framework Examples",
+                            "Events Examples",
+                            "Modification Events",
+                            "OwnedValueEntity"
+                        ]
+                    }
                 ]
             }
         },
