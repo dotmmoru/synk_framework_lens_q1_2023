@@ -3,7 +3,7 @@
     "document_id": "gR_5yN57srX9o5ey1ZhU",
     "original_document_id": "gR_5yN57srX9o5ey1ZhU",
     "version": "29",
-    "lastChanged": "1675765608049",
+    "lastChanged": "1675766055309",
     "preview": "icon.png",
     "videoPreview": "preview.mp4",
     "videoPreviewUpdateTime": "",
@@ -473,6 +473,7 @@
                     "1667249006729644:2262621",
                     "1667249126941673:2521186",
                     "1675689813955082:449640",
+                    "1675691040203317:778963",
                     "1675764018810707:3841352",
                     "1675764160043955:3977274"
                 ]
@@ -1902,6 +1903,48 @@
                                     "attachTop": "true"
                                 }
                             }
+                        },
+                        {
+                            "k": "1675765665710342:5825162",
+                            "v": {
+                                "isBasicMode": "true",
+                                "basicModeSetup": {
+                                    "fixWidth": "false",
+                                    "fixHeight": "false",
+                                    "attachBottom": "false",
+                                    "attachLeft": "true",
+                                    "attachRight": "true",
+                                    "attachTop": "false"
+                                }
+                            }
+                        },
+                        {
+                            "k": "1675765894724262:6179911",
+                            "v": {
+                                "isBasicMode": "true",
+                                "basicModeSetup": {
+                                    "fixWidth": "false",
+                                    "fixHeight": "false",
+                                    "attachBottom": "false",
+                                    "attachLeft": "false",
+                                    "attachRight": "false",
+                                    "attachTop": "false"
+                                }
+                            }
+                        },
+                        {
+                            "k": "1675765943862837:6294575",
+                            "v": {
+                                "isBasicMode": "true",
+                                "basicModeSetup": {
+                                    "fixWidth": "false",
+                                    "fixHeight": "false",
+                                    "attachBottom": "false",
+                                    "attachLeft": "false",
+                                    "attachRight": "false",
+                                    "attachTop": "false"
+                                }
+                            }
                         }
                     ],
                     "generalData": ""
@@ -2316,7 +2359,10 @@
                 "403": "1675764160043955:3977274",
                 "404": "1675764647477912:5036911",
                 "405": "1675765040119541:5339149",
-                "406": "1675765051381749:5381070"
+                "406": "1675765051381749:5381070",
+                "407": "1675765665709867:5825161",
+                "408": "1675765894632554:6178927",
+                "409": "1675765943862546:6294574"
             }
         },
         "LayerComponent": {
@@ -4458,7 +4504,7 @@
                     },
                     {
                         "k": "222",
-                        "v": "3f028a3702e22b443beb0fe40a799af8"
+                        "v": "6e46c5d6570e0db807bbd984799a9efd"
                     },
                     {
                         "k": "223",
@@ -4474,7 +4520,7 @@
                         "isFolder": "true",
                         "lastModified": "2023-02-07T10:14:56",
                         "name": "Public",
-                        "hash": "0c8b3bfed91811663927089dacb24302",
+                        "hash": "50e571f3740c4ebccea98746c5ad88e4",
                         "children": [
                             {
                                 "isFolder": "true",
@@ -4889,7 +4935,7 @@
                                 "isFolder": "true",
                                 "lastModified": "2023-02-07T12:05:50",
                                 "name": "Scripts",
-                                "hash": "d6678f86cd06f58eb455bd953aa7393e",
+                                "hash": "281a5dff52f9786c009affed0afdcbe3",
                                 "children": [
                                     {
                                         "isFolder": "false",
@@ -4907,9 +4953,9 @@
                                     },
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2023-02-07T12:23:36",
+                                        "lastModified": "2023-02-07T12:34:02",
                                         "name": "RPS_GameController.js",
-                                        "hash": "3f028a3702e22b443beb0fe40a799af8",
+                                        "hash": "6e46c5d6570e0db807bbd984799a9efd",
                                         "children": ""
                                     },
                                     {
@@ -9541,7 +9587,7 @@
         "InspectorController": {
             "selection": {
                 "objects": [
-                    "1675765051381749:5381070"
+                    "1675691023246603:777378"
                 ]
             }
         },

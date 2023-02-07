@@ -1,9 +1,11 @@
 // -----JS CODE-----
 //@input SceneObject readyUI
 //@input SceneObject gameplayUI
+//@input SceneObject gameoverUI
 //@input Component.Text yourScore
 //@input Component.Text otherScore
 //@input Component.Text timer
+//@input Component.Text gameResult
 //@input Component.ScriptComponent[] buttons
 
 var selectedBtn = -1;
@@ -55,12 +57,17 @@ function GetUserNames()
 function SetNamesAndScore(scoreYou, scoreOther)
 {
 	script.yourScore.text = yourName + ": " + scoreYou;
-	script.otherScore.text = otherName + ": " + otherScore;
+	script.otherScore.text = otherName + ": " + scoreOther;
 }
 
 function SetTimerText(value)
 {
 	script.timer.text = value;
+}
+
+function SetGameOverResult(value)
+{
+	script.gameResult.text = value? "YOU WIN":"YOU LOSE";
 }
 
 Start();
