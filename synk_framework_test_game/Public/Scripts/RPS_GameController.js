@@ -4,7 +4,6 @@
 //@input SceneObject gameoverUI
 //@input Component.Text connectedUsers
 //@input Component.Text timer
-//@input Component.Text score
 //@input SceneObject timerTween
 //@input Component.Text gameResult
 //@input Component.ScriptComponent otherResult
@@ -12,9 +11,12 @@
 
 ///////////////////////////////////////////////////////
 var syncEntity = new global.SyncEntity(script);
-var startScore = new vec3(0,0,0);
-var scoreProp = global.StorageProperty.manual("_score", global.StorageTypes.vec3 ,startScore);
-syncEntity.addStorageProperty(scoreProp);
+
+var scoreYourProp = global.StorageProperty.manualInt("your_score" ,0);
+syncEntity.addStorageProperty(scoreYourProp);
+
+var scoreOtherProp = global.StorageProperty.manualInt("other_score" ,0);
+syncEntity.addStorageProperty(scoreOtherProp);
 
 var yourNameProp = global.StorageProperty.manual("yourName", global.StorageTypes.string, "");
 syncEntity.addStorageProperty(yourNameProp);
@@ -43,6 +45,10 @@ syncEntity.onEventReceived.add("startGameplay",function()
 {
 	StartGameplay();
 });
+syncEntity.onEventReceived.add("startGameover",function() 
+{
+	StartGameover();
+});
 
 syncEntity.onEventReceived.add("gameplayCountDown",function(networkMessage) 
 {
@@ -55,9 +61,15 @@ syncEntity.onEventReceived.add("gameplayCheckResult",function()
 	var otherResult = IsMainUser()? otherChoiceProp.currentValue : yourChoiceProp.currentValue;
 	print("otherResult " + otherResult);
 	script.otherResult.api.ShowOtherResult(otherResult);
+	var isGameOver = false
 	if(IsMainUser())
-		HandleResult();
-	delay_CheckUsersAmount.reset(2);
+	{
+		isGameOver = HandleResult();
+	}
+	if(isGameOver)
+		delay_GameOver.reset(2);
+	else
+		delay_CheckUsersAmount.reset(2);
 });
 ///////////////////////////////////////////////////////
 function OnConnectNewUser()
@@ -78,6 +90,8 @@ function UpdateAmountOfConnectedUsers(amount)
 
 function HandleResult()
 {
+	var other = 0;
+	var your = 0;
 	if(yourChoiceProp.currentValue >= 0 && otherChoiceProp.currentValue >= 0)
 	{
 		if(yourChoiceProp.currentValue != otherChoiceProp.currentValue)
@@ -97,11 +111,13 @@ function HandleResult()
 	{
 		if(yourChoiceProp.currentValue >= 0 || otherChoiceProp.currentValue >= 0)
 		{
-			var other = otherChoiceProp.currentValue > yourChoiceProp.currentValue ? 1:0;
-			var your = otherChoiceProp.currentValue < yourChoiceProp.currentValue ? 1:0;
+			other = otherChoiceProp.currentValue > yourChoiceProp.currentValue ? 1:0;
+			your = otherChoiceProp.currentValue < yourChoiceProp.currentValue ? 1:0;
 			addScore(your,other);
 		}
 	}
+
+	return CheckGameOver(your,other);
 }
 
 function IfVal(a, b, choiceY , choiceO, score) 
@@ -115,9 +131,13 @@ function IfVal(a, b, choiceY , choiceO, score)
 
 function addScore(yourScore, otherScore) 
 {
-	var tempScore = new vec3(scoreProp.currentValue.x += yourScore, scoreProp.currentValue.y += otherScore,0);
-	print(tempScore);
-    scoreProp.setPendingValue(tempScore);
+    scoreYourProp.setPendingValue(scoreYourProp.currentValue + yourScore);
+    scoreOtherProp.setPendingValue(scoreOtherProp.currentValue + otherScore);
+}
+
+function CheckGameOver(yourScore, otherScore)
+{
+	return yourScore >= gameOverAmount || otherScore >= gameOverAmount;
 }
 
 function IsMainUser()
@@ -125,9 +145,10 @@ function IsMainUser()
 	return global.getUserName() === yourNameProp.currentValue;
 }
 ///////////////////////////////////////////////////////
+var gameOverAmount = 3;
 var countdownAmount = 6;
+var resetDone = false;
 
-// NEED TO GET USER NAMES 
 
 function Start()
 {
@@ -145,15 +166,22 @@ function SetEnabledGameUI(ready,game,over)
 function StartGameplay()
 {
 	SetEnabledGameUI(false,true,false);
-
-	script.score.text = scoreProp.currentValue.x + "\n" + scoreProp.currentValue.y;
-
+	resetDone = false;
 	ResetChoise();
 	AllowButtonTap(true);
 	UnSelectAllButtons(-1);
 	script.otherResult.api.HideOtherResult();
 	countdownAmount = 6;
 	delay_GameplayCountDown.reset(0);
+}
+
+function StartGameover()
+{
+	SetEnabledGameUI(false,false,true);
+	ResetChoise();
+	AllowButtonTap(false);
+	UnSelectAllButtons(-1);
+	script.otherResult.api.HideOtherResult();
 }
 
 script.api.SelectButton = function(id)
@@ -199,6 +227,21 @@ function GetUserNames()
 			otherNameProp.setPendingValue(userName);
 }
 
+function ResetConnection() 
+{
+	if(resetDone === true)
+		return;
+
+	resetDone = true;
+	yourNameProp.setPendingValue("");
+	otherNameProp.setPendingValue("");
+
+    scoreYourProp.setPendingValue(0);
+    scoreOtherProp.setPendingValue(0);
+
+    ResetChoise();
+}
+
 function SetTimerText(value)
 {
 	script.timer.text = value+"";
@@ -217,11 +260,16 @@ function SetGameOverResult(value)
 var delay_CheckUsersAmount = script.createEvent("DelayedCallbackEvent");
 delay_CheckUsersAmount.bind(function(eventData)
 {
-	if(IsMainUser())
+	var usersAmount = global.sessionController.getUsers().length
+	if(usersAmount === 2)
 	{
-		var usersAmount = global.sessionController.getUsers().length
-		if(usersAmount === 2)
+		if(IsMainUser())
 			syncEntity.sendEvent("startGameplay");
+	}
+	//else if(usersAmount < 2)
+	{
+		//ResetConnection();
+		//OnConnectNewUser();
 	}
 });
 
@@ -243,6 +291,13 @@ delay_GameplayCountDown.bind(function(eventData)
 			syncEntity.sendEvent("gameplayCheckResult");
 		}
 	}
+});
+
+var delay_GameOver = script.createEvent("DelayedCallbackEvent");
+delay_GameOver.bind(function(eventData)
+{
+	if(IsMainUser())
+		syncEntity.sendEvent("startGameover");
 });
 
 ///////////////////////////////////////////////////////////
