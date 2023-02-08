@@ -3,7 +3,7 @@
     "document_id": "gR_5yN57srX9o5ey1ZhU",
     "original_document_id": "gR_5yN57srX9o5ey1ZhU",
     "version": "29",
-    "lastChanged": "1675873876810",
+    "lastChanged": "1675876182395",
     "preview": "icon.png",
     "videoPreview": "preview.mp4",
     "videoPreviewUpdateTime": "",
@@ -30,291 +30,7 @@
     "view": {
         "ResourceUiComponent": {
             "collapsedList": [
-                [
-                    [
-                        "Asset Library Resources"
-                    ],
-                    [
-                        "Avatar Controller"
-                    ],
-                    [
-                        "Avatar Controller",
-                        "Heart Glasses Avatar"
-                    ],
-                    [
-                        "Hand Avatar"
-                    ],
-                    [
-                        "Hand Avatar",
-                        "Hand Tracking Assets"
-                    ],
-                    [
-                        "Hand Avatar",
-                        "Materials"
-                    ],
-                    [
-                        "Hand Avatar",
-                        "Meshes"
-                    ],
-                    [
-                        "Hand Avatar",
-                        "Prefabs"
-                    ],
-                    [
-                        "Hand Avatar",
-                        "Prefabs",
-                        "RightHandAvatar"
-                    ],
-                    [
-                        "Hand Avatar",
-                        "Scripts"
-                    ],
-                    [
-                        "Scene Resources"
-                    ],
-                    [
-                        "Scripts",
-                        "DevTools"
-                    ],
-                    [
-                        "Scripts",
-                        "RPS_Button"
-                    ],
-                    [
-                        "Scripts",
-                        "RPS_GameController"
-                    ],
-                    [
-                        "Scripts",
-                        "RPS_OtherResult"
-                    ],
-                    [
-                        "Scripts",
-                        "RPS_Ready"
-                    ],
-                    [
-                        "Shared Resources"
-                    ],
-                    [
-                        "Shared Resources",
-                        "Materials"
-                    ],
-                    [
-                        "Shared Resources",
-                        "Materials",
-                        "Blue"
-                    ],
-                    [
-                        "Shared Resources",
-                        "Materials",
-                        "Orange"
-                    ],
-                    [
-                        "Shared Resources",
-                        "Materials",
-                        "Purple"
-                    ],
-                    [
-                        "Shared Resources",
-                        "Materials",
-                        "Yellow"
-                    ],
-                    [
-                        "Shared Resources",
-                        "Meshes"
-                    ],
-                    [
-                        "Shared Resources",
-                        "Meshes",
-                        "Cube"
-                    ],
-                    [
-                        "Shared Resources",
-                        "Meshes",
-                        "Cube",
-                        "Cube"
-                    ],
-                    [
-                        "Shared Resources",
-                        "Meshes",
-                        "Cube",
-                        "Meshes"
-                    ],
-                    [
-                        "Shared Resources",
-                        "Meshes",
-                        "Cube",
-                        "Meshes",
-                        "Cube"
-                    ],
-                    [
-                        "Shared Resources",
-                        "Meshes",
-                        "Heart"
-                    ],
-                    [
-                        "Shared Resources",
-                        "Meshes",
-                        "Heart",
-                        "Heart"
-                    ],
-                    [
-                        "Shared Resources",
-                        "Meshes",
-                        "Heart",
-                        "Meshes",
-                        "Cube"
-                    ],
-                    [
-                        "Shared Resources",
-                        "Meshes",
-                        "Pyramid"
-                    ],
-                    [
-                        "Shared Resources",
-                        "Meshes",
-                        "Pyramid",
-                        "Meshes",
-                        "Plane"
-                    ],
-                    [
-                        "Shared Resources",
-                        "Meshes",
-                        "Pyramid",
-                        "Pyramid"
-                    ],
-                    [
-                        "Shared Resources",
-                        "Meshes",
-                        "Sphere 3"
-                    ],
-                    [
-                        "Shared Resources",
-                        "Meshes",
-                        "Sphere 3",
-                        "Meshes"
-                    ],
-                    [
-                        "Shared Resources",
-                        "Meshes",
-                        "Sphere 3",
-                        "Meshes",
-                        "Sphere"
-                    ],
-                    [
-                        "Shared Resources",
-                        "Meshes",
-                        "Sphere 3",
-                        "Sphere 2"
-                    ],
-                    [
-                        "Shared Resources",
-                        "Meshes",
-                        "Star"
-                    ],
-                    [
-                        "Shared Resources",
-                        "Meshes",
-                        "Star",
-                        "Meshes"
-                    ],
-                    [
-                        "Shared Resources",
-                        "Meshes",
-                        "Star",
-                        "Meshes",
-                        "Circle"
-                    ],
-                    [
-                        "Shared Resources",
-                        "Meshes",
-                        "Star",
-                        "Star"
-                    ],
-                    [
-                        "Shared Resources",
-                        "Meshes",
-                        "Torus"
-                    ],
-                    [
-                        "Shared Resources",
-                        "Meshes",
-                        "Torus",
-                        "Meshes"
-                    ],
-                    [
-                        "Shared Resources",
-                        "Meshes",
-                        "Torus",
-                        "Meshes",
-                        "Torus"
-                    ],
-                    [
-                        "Shared Resources",
-                        "Meshes",
-                        "Torus",
-                        "Torus"
-                    ],
-                    [
-                        "Sync Framework",
-                        "Resources",
-                        "Colocated Resources"
-                    ],
-                    [
-                        "Sync Framework",
-                        "Utils"
-                    ],
-                    [
-                        "Sync Framework Examples",
-                        "Air Hockey"
-                    ],
-                    [
-                        "Sync Framework Examples",
-                        "Air Hockey",
-                        "Resources"
-                    ],
-                    [
-                        "Sync Framework Examples",
-                        "Air Hockey",
-                        "Scripts"
-                    ],
-                    [
-                        "Sync Framework Examples",
-                        "Persistence Examples"
-                    ],
-                    [
-                        "Textures",
-                        "MyGame",
-                        "Nothing"
-                    ],
-                    [
-                        "Textures",
-                        "MyGame",
-                        "READY"
-                    ],
-                    [
-                        "Textures",
-                        "MyGame",
-                        "paper"
-                    ],
-                    [
-                        "Textures",
-                        "MyGame",
-                        "rock"
-                    ],
-                    [
-                        "Textures",
-                        "MyGame",
-                        "scisors"
-                    ],
-                    [
-                        "Toolbelt"
-                    ],
-                    [
-                        "Tween",
-                        "Visual Scripting Custom Nodes"
-                    ]
-                ]
+                ""
             ]
         },
         "SceneTreeUiComponent": {
@@ -541,7 +257,9 @@
                     "1675852488530074:1798263",
                     "1675854719261193:3947510",
                     "1675864113623093:559824",
-                    "1675864113634240:559949"
+                    "1675864113634240:559949",
+                    "1675874721342209:570977",
+                    "1675874721354587:571104"
                 ]
             ]
         },
@@ -1754,6 +1472,14 @@
                     "sourceFilePath": "",
                     "additionalProperties": "",
                     "flags": "1"
+                },
+                {
+                    "resId": "526",
+                    "uid": "1675874419345606:205620",
+                    "name": "Files\/File958.js",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
                 }
             ],
             "MaterialUpdateManager": {
@@ -1992,6 +1718,20 @@
                                     "attachLeft": "false",
                                     "attachRight": "false",
                                     "attachTop": "false"
+                                }
+                            }
+                        },
+                        {
+                            "k": "1675874721342209:570977",
+                            "v": {
+                                "isBasicMode": "true",
+                                "basicModeSetup": {
+                                    "fixWidth": "false",
+                                    "fixHeight": "false",
+                                    "attachBottom": "false",
+                                    "attachLeft": "false",
+                                    "attachRight": "false",
+                                    "attachTop": "true"
                                 }
                             }
                         }
@@ -2416,7 +2156,8 @@
                 "411": "1675852488505014:1797899",
                 "412": "1675854715206276:3947249",
                 "413": "1675854719261193:3947510",
-                "414": "1675864113605851:559587"
+                "414": "1675864113605851:559587",
+                "415": "1675874721311318:570503"
             }
         },
         "LayerComponent": {
@@ -3292,6 +3033,10 @@
                 {
                     "k": "957",
                     "v": "Files\/File957.pvr"
+                },
+                {
+                    "k": "958",
+                    "v": "Files\/File958.js"
                 }
             ]
         },
@@ -3989,6 +3734,10 @@
                     {
                         "k": "227",
                         "v": "Textures\/MyGame\/Nothing.png"
+                    },
+                    {
+                        "k": "228",
+                        "v": "Scripts\/RPC_DisplayStorageProperty.js"
                     }
                 ],
                 "hashes": [
@@ -4594,7 +4343,7 @@
                     },
                     {
                         "k": "222",
-                        "v": "cf1429a1813674e7ef5a759213958ae9"
+                        "v": "d1ed58294ee2f098fd11cec742d05d37"
                     },
                     {
                         "k": "223",
@@ -4615,6 +4364,10 @@
                     {
                         "k": "227",
                         "v": "7428b59ef89b38d189c0d8bef3d5178e"
+                    },
+                    {
+                        "k": "228",
+                        "v": "a6bbc64acf803ed7612ab77013833aa4"
                     }
                 ],
                 "publicState": {
@@ -4622,7 +4375,7 @@
                         "isFolder": "true",
                         "lastModified": "2023-02-06T15:45:11",
                         "name": "Public",
-                        "hash": "8d28cebe3f67ee2668a41e1f92354ded",
+                        "hash": "8508c85af8c435fd8c53ab5d6c845784",
                         "children": [
                             {
                                 "isFolder": "true",
@@ -5035,9 +4788,9 @@
                             },
                             {
                                 "isFolder": "true",
-                                "lastModified": "2023-02-08T14:49:47",
+                                "lastModified": "2023-02-08T18:40:36",
                                 "name": "Scripts",
-                                "hash": "663bc3849967a0968710f0fecc161c03",
+                                "hash": "c9553c26e180c6f006da70df724c29cd",
                                 "children": [
                                     {
                                         "isFolder": "false",
@@ -5055,6 +4808,13 @@
                                     },
                                     {
                                         "isFolder": "false",
+                                        "lastModified": "2023-02-08T18:51:47",
+                                        "name": "RPC_DisplayStorageProperty.js",
+                                        "hash": "a6bbc64acf803ed7612ab77013833aa4",
+                                        "children": ""
+                                    },
+                                    {
+                                        "isFolder": "false",
                                         "lastModified": "2023-02-08T15:51:23",
                                         "name": "RPS_Button.js",
                                         "hash": "7866a0850e9a17f2b4cfd9b1d918bc72",
@@ -5062,9 +4822,9 @@
                                     },
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2023-02-08T18:29:39",
+                                        "lastModified": "2023-02-08T19:07:03",
                                         "name": "RPS_GameController.js",
-                                        "hash": "cf1429a1813674e7ef5a759213958ae9",
+                                        "hash": "d1ed58294ee2f098fd11cec742d05d37",
                                         "children": ""
                                     },
                                     {
@@ -5240,7 +5000,7 @@
                                             },
                                             {
                                                 "isFolder": "true",
-                                                "lastModified": "2023-02-06T14:05:09",
+                                                "lastModified": "2023-02-08T18:40:21",
                                                 "name": "Sync Helpers",
                                                 "hash": "bb827b3a39fc9567f14aa1dd4a60ee7c",
                                                 "children": [
@@ -9745,6 +9505,20 @@
                                 "publicId": "226",
                                 "source": "\/Users\/pavelivasiuk\/Library\/Caches\/Snap\/Lens Studio\/temp\/StudiogDaYvtjEbyFV\/\/system\/\/emergencyFiles\/emergencyJs.js",
                                 "additional": ""
+                            },
+                            {
+                                "name": "RPC_DisplayStorageProperty",
+                                "type": "4",
+                                "subtype": "0",
+                                "resourceId": "526",
+                                "dependency": "0",
+                                "hidden": "false",
+                                "uid": "1675874419345606:205620",
+                                "fileId": "958",
+                                "originalId": "18446744073709551615",
+                                "publicId": "228",
+                                "source": "",
+                                "additional": ""
                             }
                         ]
                     }
@@ -9753,16 +9527,8 @@
         },
         "InspectorController": {
             "selection": {
-                "resources": [
-                    {
-                        "uid": "1654199128867005:2573359",
-                        "path_list": [
-                            "Sync Framework",
-                            "Components",
-                            "Sync Helpers",
-                            "DisplayStorageProperty"
-                        ]
-                    }
+                "objects": [
+                    "1675689814012194:449770"
                 ]
             }
         },

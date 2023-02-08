@@ -3,9 +3,8 @@
 //@input SceneObject gameplayUI
 //@input SceneObject gameoverUI
 //@input Component.Text connectedUsers
-//@input Component.Text yourScore
-//@input Component.Text otherScore
 //@input Component.Text timer
+//@input Component.Text score
 //@input SceneObject timerTween
 //@input Component.Text gameResult
 //@input Component.ScriptComponent otherResult
@@ -13,8 +12,8 @@
 
 ///////////////////////////////////////////////////////
 var syncEntity = new global.SyncEntity(script);
-
-var scoreProp = global.StorageProperty.manual("score", global.StorageTypes.vec2, new vec2(0,0));
+var startScore = new vec3(0,0,0);
+var scoreProp = global.StorageProperty.manual("_score", global.StorageTypes.vec3 ,startScore);
 syncEntity.addStorageProperty(scoreProp);
 
 var yourNameProp = global.StorageProperty.manual("yourName", global.StorageTypes.string, "");
@@ -32,7 +31,6 @@ syncEntity.addStorageProperty(otherChoiceProp);
 syncEntity.notifyOnReady(onReady);
 function onReady()
 {
-	ListenProperties();
 	syncEntity.sendEvent("onConnectNewUser");
 }
 
@@ -62,24 +60,6 @@ syncEntity.onEventReceived.add("gameplayCheckResult",function()
 	delay_CheckUsersAmount.reset(2);
 });
 ///////////////////////////////////////////////////////
-function ListenProperties() 
-{
-	yourNameProp.onAnyChange.add(function(newValue, oldValue) 
-	{
-		SetNamesAndScore();
-	});
-
-    otherNameProp.onAnyChange.add(function(newValue, oldValue) 
-	{
-		SetNamesAndScore();
-	});
-
-    scoreProp.onAnyChange.add(function(newValue, oldValue) 
-	{
-		SetNamesAndScore();
-	});
-}
-
 function OnConnectNewUser()
 {
 	GetUserNames();
@@ -135,7 +115,7 @@ function IfVal(a, b, choiceY , choiceO, score)
 
 function addScore(yourScore, otherScore) 
 {
-	var tempScore = new vec2(scoreProp.currentValue.x += yourScore, scoreProp.currentValue.y += otherScore);
+	var tempScore = new vec3(scoreProp.currentValue.x += yourScore, scoreProp.currentValue.y += otherScore,0);
 	print(tempScore);
     scoreProp.setPendingValue(tempScore);
 }
@@ -165,6 +145,9 @@ function SetEnabledGameUI(ready,game,over)
 function StartGameplay()
 {
 	SetEnabledGameUI(false,true,false);
+
+	script.score.text = scoreProp.currentValue.x + "\n" + scoreProp.currentValue.y;
+
 	ResetChoise();
 	AllowButtonTap(true);
 	UnSelectAllButtons(-1);
@@ -216,14 +199,6 @@ function GetUserNames()
 			otherNameProp.setPendingValue(userName);
 }
 
-function SetNamesAndScore()
-{
-	//print("SetNamesAndScore " + yourNameProp.currentValue + ": " + scoreProp.currentValue.x);
-	//print("SetNamesAndScore " + otherNameProp.currentValue + ": " + scoreProp.currentValue.y);
-	//script.yourScore.text = yourNameProp.currentValue + ": " + scoreProp.currentValue.x;
-	//script.otherScore.text = otherNameProp.currentValue + ": " + scoreProp.currentValue.y;
-}
-
 function SetTimerText(value)
 {
 	script.timer.text = value+"";
@@ -260,12 +235,13 @@ delay_GameplayCountDown.bind(function(eventData)
 
 		if(countdownAmount > 0)
 		{
-			if(countdownAmount === 1)
-				AllowButtonTap(false);
 			delay_GameplayCountDown.reset(1);
 		}
 		else 
+		{
+			AllowButtonTap(false);
 			syncEntity.sendEvent("gameplayCheckResult");
+		}
 	}
 });
 
