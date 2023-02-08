@@ -10,7 +10,7 @@ var isSelected = false;
 
 function Start()
 {
-	isTapEnabled = true;// ????????????
+	isTapEnabled = false;// ????????????
 	isSelected = false;
 	UpdateTexture();
 }
@@ -28,6 +28,11 @@ function DoEvent()
 	isSelected = true;
 	UpdateTexture();
 	script.gameController.api.SelectButton(script.id);
+}
+
+script.api.IsTapEnabled = function(value)
+{
+	isTapEnabled = value;
 }
 
 script.api.UnSelect= function()
