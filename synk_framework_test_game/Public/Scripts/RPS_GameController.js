@@ -2,10 +2,13 @@
 //@input SceneObject readyUI
 //@input SceneObject gameplayUI
 //@input SceneObject gameoverUI
+//@input Component.Text connectedUsers
 //@input Component.Text yourScore
 //@input Component.Text otherScore
 //@input Component.Text timer
+//@input SceneObject timerTween
 //@input Component.Text gameResult
+//@input Component.ScriptComponent otherResult
 //@input Component.ScriptComponent[] buttons
 
 ///////////////////////////////////////////////////////
@@ -20,11 +23,6 @@ syncEntity.addStorageProperty(yourNameProp);
 var otherNameProp = global.StorageProperty.manualString("otherName", "");
 syncEntity.addStorageProperty(otherNameProp);
 
-syncEntity.onEventReceived.add("onConnectNewUser",function() 
-{
-	OnConnectNewUser();
-});
-
 syncEntity.notifyOnReady(onReady);
 function onReady()
 {
@@ -32,6 +30,27 @@ function onReady()
 	syncEntity.sendEvent("onConnectNewUser");
 }
 
+syncEntity.onEventReceived.add("onConnectNewUser",function() 
+{
+	OnConnectNewUser();
+});
+
+syncEntity.onEventReceived.add("startGameplay",function() 
+{
+	StartGameplay();
+});
+
+syncEntity.onEventReceived.add("gameplayCountDown",function(networkMessage) 
+{
+	SetTimerText(networkMessage.data);
+});
+
+syncEntity.onEventReceived.add("gameplayCheckResult",function() 
+{
+	SetTimerText("");
+	script.otherResult.api.ShowOtherResult(2);
+});
+///////////////////////////////////////////////////////
 function ListenProperties() 
 {
 	var yourNameP = syncEntity.propertySet.getProperty("yourName");
@@ -49,58 +68,54 @@ function ListenProperties()
 
 function OnConnectNewUser()
 {
-   	script.readyUI.enabled = true;
-	script.gameplayUI.enabled = true;
-	script.gameoverUI.enabled = false;
-	
-	SetTimerText("");
 	GetUserNames();
+
+	var usersAmount = global.sessionController.getUsers().length;
+	UpdateAmountOfConnectedUsers(usersAmount);
+	SetEnabledGameUI(true,false,false);	
+
+	delay_CheckUsersAmount.reset(1);
 }
 
-syncEntity.onEventReceived.add("onClickReady",function() 
-{
-	print("canIModifyStore" + syncEntity.canIModifyStore());
 
-	if(isReady === true)
-	{
-		print("Start Gameplay");
-		StartGameplay();
-	}
-});
+
+function UpdateAmountOfConnectedUsers(amount)
+{
+	script.connectedUsers.text = "Connected users: \n"+amount+"/2";
+}
 
 function addScore(amount) 
 {
     scoreProp.setPendingValue(scoreProp.currentValue + amount);
 }
+
+function IsMainUser()
+{
+	return global.getUserName() === yourNameProp.currentValue;
+}
 ///////////////////////////////////////////////////////
 var selectedBtn = -1;
-var isReady  = false;
+var countdownAmount = 6;
 
 // NEED TO GET USER NAMES 
 
 function Start()
 {
-	script.readyUI.enabled = false;
-	script.gameplayUI.enabled = false;
-	script.gameoverUI.enabled = false;
-	
+	SetEnabledGameUI(false,false,false);
 	SetTimerText("");
+}
+
+function SetEnabledGameUI(ready,game,over)
+{
+	script.readyUI.enabled = ready;
+	script.gameplayUI.enabled = game;
+	script.gameoverUI.enabled = over;
 }
 
 function StartGameplay()
 {
-	script.readyUI.enabled = false;
-	script.gameplayUI.enabled = true;
-	script.gameoverUI.enabled = false;
-	
-	SetTimerText("game");
-}
-
-script.api.OnClick_ReadyButton = function()
-{
-	print("READY Clicked");
-	isReady = true;
-	syncEntity.sendEvent("onClickReady");
+	SetEnabledGameUI(false,true,false);
+	delay_GameplayCountDown.reset(0);
 }
 
 script.api.SelectButton = function(id)
@@ -140,12 +155,45 @@ function SetNamesAndScore()
 
 function SetTimerText(value)
 {
-	script.timer.text = value;
+	script.timer.text = value+"";
+	if(value != 0 && value != "")
+		global.tweenManager.startTween(script.timerTween,"show");
+	else 
+		global.tweenManager.startTween(script.timerTween,"init");
 }
 
 function SetGameOverResult(value)
 {
 	script.gameResult.text = value? "YOU WIN":"YOU LOSE";
 }
+
+///////////////////////////////////////////////////////////
+var delay_CheckUsersAmount = script.createEvent("DelayedCallbackEvent");
+delay_CheckUsersAmount.bind(function(eventData)
+{
+	if(IsMainUser())
+	{
+		var usersAmount = global.sessionController.getUsers().length
+		if(usersAmount === 2)
+			syncEntity.sendEvent("startGameplay");
+	}
+});
+
+var delay_GameplayCountDown = script.createEvent("DelayedCallbackEvent");
+delay_GameplayCountDown.bind(function(eventData)
+{
+	if(IsMainUser())
+	{
+		countdownAmount --;
+		syncEntity.sendEvent("gameplayCountDown", countdownAmount);
+
+		if(countdownAmount >0)
+			delay_GameplayCountDown.reset(1);
+		else 
+			syncEntity.sendEvent("gameplayCheckResult");
+	}
+});
+
+///////////////////////////////////////////////////////////
 
 Start();

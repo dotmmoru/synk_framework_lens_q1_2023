@@ -3,7 +3,7 @@
     "document_id": "gR_5yN57srX9o5ey1ZhU",
     "original_document_id": "gR_5yN57srX9o5ey1ZhU",
     "version": "29",
-    "lastChanged": "1675800731714",
+    "lastChanged": "1675855671109",
     "preview": "icon.png",
     "videoPreview": "preview.mp4",
     "videoPreviewUpdateTime": "",
@@ -73,6 +73,9 @@
                         "Scene Resources"
                     ],
                     [
+                        "Scripts"
+                    ],
+                    [
                         "Scripts",
                         "DevTools"
                     ],
@@ -83,6 +86,10 @@
                     [
                         "Scripts",
                         "RPS_GameController"
+                    ],
+                    [
+                        "Scripts",
+                        "RPS_OtherResult"
                     ],
                     [
                         "Scripts",
@@ -252,6 +259,9 @@
                         "Torus"
                     ],
                     [
+                        "Sync Framework"
+                    ],
+                    [
                         "Sync Framework",
                         "Resources",
                         "Colocated Resources"
@@ -303,9 +313,6 @@
                     ],
                     [
                         "Toolbelt"
-                    ],
-                    [
-                        "Tween"
                     ],
                     [
                         "Tween",
@@ -391,6 +398,7 @@
                     "1654229088567003:1073613",
                     "1654229210270032:1161386",
                     "1654554436734278:263084",
+                    "1654708764207818:127480",
                     "1654708813396587:211065",
                     "1654709399191677:583199",
                     "1654709424963110:622294",
@@ -456,7 +464,8 @@
                     "1667249006729644:2262621",
                     "1667249126941673:2521186",
                     "1675764018810707:3841352",
-                    "1675764160043955:3977274"
+                    "1675764160043955:3977274",
+                    "1675765894632554:6178927"
                 ]
             ],
             "selectionSetList": ""
@@ -525,7 +534,9 @@
                     "1675691167769122:993611",
                     "1675691171124707:1014258",
                     "1675764160044424:3977275",
-                    "1675764160060313:3977401"
+                    "1675764160060313:3977401",
+                    "1675852488530074:1798263",
+                    "1675854719261193:3947510"
                 ]
             ]
         },
@@ -1722,6 +1733,14 @@
                     "sourceFilePath": "",
                     "additionalProperties": "",
                     "flags": "1"
+                },
+                {
+                    "resId": "524",
+                    "uid": "1675852523059315:1863660",
+                    "name": "Files\/File953.js",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
                 }
             ],
             "MaterialUpdateManager": {
@@ -1838,20 +1857,6 @@
                             }
                         },
                         {
-                            "k": "1675764160044424:3977275",
-                            "v": {
-                                "isBasicMode": "true",
-                                "basicModeSetup": {
-                                    "fixWidth": "false",
-                                    "fixHeight": "false",
-                                    "attachBottom": "true",
-                                    "attachLeft": "false",
-                                    "attachRight": "false",
-                                    "attachTop": "false"
-                                }
-                            }
-                        },
-                        {
                             "k": "1675764647478205:5036912",
                             "v": {
                                 "isBasicMode": "true",
@@ -1923,6 +1928,34 @@
                         },
                         {
                             "k": "1675765943862837:6294575",
+                            "v": {
+                                "isBasicMode": "true",
+                                "basicModeSetup": {
+                                    "fixWidth": "false",
+                                    "fixHeight": "false",
+                                    "attachBottom": "false",
+                                    "attachLeft": "false",
+                                    "attachRight": "false",
+                                    "attachTop": "false"
+                                }
+                            }
+                        },
+                        {
+                            "k": "1675851202460409:777964",
+                            "v": {
+                                "isBasicMode": "true",
+                                "basicModeSetup": {
+                                    "fixWidth": "false",
+                                    "fixHeight": "false",
+                                    "attachBottom": "false",
+                                    "attachLeft": "true",
+                                    "attachRight": "true",
+                                    "attachTop": "false"
+                                }
+                            }
+                        },
+                        {
+                            "k": "1675852488519254:1798138",
                             "v": {
                                 "isBasicMode": "true",
                                 "basicModeSetup": {
@@ -2345,14 +2378,17 @@
                 "400": "1675691071618654:824771",
                 "401": "1675691081750920:866909",
                 "402": "1675764018810707:3841352",
-                "403": "1675764160043955:3977274",
-                "404": "1675764647477912:5036911",
-                "405": "1675765040119541:5339149",
-                "406": "1675765051381749:5381070",
-                "407": "1675765665709867:5825161",
-                "408": "1675765894632554:6178927",
-                "409": "1675765943862546:6294574",
-                "410": "1675790738987105:3031027"
+                "403": "1675764647477912:5036911",
+                "404": "1675765040119541:5339149",
+                "405": "1675765051381749:5381070",
+                "406": "1675765665709867:5825161",
+                "407": "1675765894632554:6178927",
+                "408": "1675765943862546:6294574",
+                "409": "1675790738987105:3031027",
+                "410": "1675851202437278:777712",
+                "411": "1675852488505014:1797899",
+                "412": "1675854715206276:3947249",
+                "413": "1675854719261193:3947510"
             }
         },
         "LayerComponent": {
@@ -3208,6 +3244,10 @@
                 {
                     "k": "952",
                     "v": "Files\/File952.js"
+                },
+                {
+                    "k": "953",
+                    "v": "Files\/File953.js"
                 }
             ]
         },
@@ -3897,6 +3937,10 @@
                     {
                         "k": "225",
                         "v": "Scripts\/DevTools.js"
+                    },
+                    {
+                        "k": "226",
+                        "v": "Scripts\/RPS_OtherResult.js"
                     }
                 ],
                 "hashes": [
@@ -4502,7 +4546,7 @@
                     },
                     {
                         "k": "222",
-                        "v": "18f79422580bd2ee6f1587b4dc0c3765"
+                        "v": "d2727c98617aaca6273c4e3bc09f386e"
                     },
                     {
                         "k": "223",
@@ -4515,6 +4559,10 @@
                     {
                         "k": "225",
                         "v": "20b1560d33fa9e3bbd47cccdf049aa43"
+                    },
+                    {
+                        "k": "226",
+                        "v": "2348c95cff083fb8945e78d6d0eea7a5"
                     }
                 ],
                 "publicState": {
@@ -4522,7 +4570,7 @@
                         "isFolder": "true",
                         "lastModified": "2023-02-07T18:12:22",
                         "name": "Public",
-                        "hash": "a243d1ded0e66b70c29862f4e6e6071b",
+                        "hash": "545b5a271e169d927903535a8679ffcd",
                         "children": [
                             {
                                 "isFolder": "true",
@@ -5617,9 +5665,9 @@
                             },
                             {
                                 "isFolder": "true",
-                                "lastModified": "2023-02-07T19:26:04",
+                                "lastModified": "2023-02-08T12:35:32",
                                 "name": "Scripts",
-                                "hash": "28a8985121d4677e376a381b02395f5d",
+                                "hash": "6446481d004b76d176972babe77095b4",
                                 "children": [
                                     {
                                         "isFolder": "false",
@@ -5630,9 +5678,16 @@
                                     },
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2023-02-07T22:11:44",
+                                        "lastModified": "2023-02-08T13:27:37",
                                         "name": "RPS_GameController.js",
-                                        "hash": "18f79422580bd2ee6f1587b4dc0c3765",
+                                        "hash": "d2727c98617aaca6273c4e3bc09f386e",
+                                        "children": ""
+                                    },
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2023-02-08T13:00:25",
+                                        "name": "RPS_OtherResult.js",
+                                        "hash": "2348c95cff083fb8945e78d6d0eea7a5",
                                         "children": ""
                                     },
                                     {
@@ -9601,6 +9656,20 @@
                                 "publicId": "225",
                                 "source": "\/Users\/pavelivasiuk\/Documents\/GitHub\/State_Farm_x_NBA__Commentated_Concept__Snap_2023_Q1\/State_Farm_x_NBA__Commentated_Concept\/Public\/Scripts\/DevTools.js",
                                 "additional": ""
+                            },
+                            {
+                                "name": "RPS_OtherResult",
+                                "type": "4",
+                                "subtype": "0",
+                                "resourceId": "524",
+                                "dependency": "0",
+                                "hidden": "false",
+                                "uid": "1675852523059315:1863660",
+                                "fileId": "953",
+                                "originalId": "18446744073709551615",
+                                "publicId": "226",
+                                "source": "\/Users\/pavelivasiuk\/Library\/Caches\/Snap\/Lens Studio\/temp\/StudiogDaYvtjEbyFV\/\/system\/\/emergencyFiles\/emergencyJs.js",
+                                "additional": ""
                             }
                         ]
                     }
@@ -9610,7 +9679,7 @@
         "InspectorController": {
             "selection": {
                 "objects": [
-                    "1675689814012194:449770"
+                    "1675691023246603:777378"
                 ]
             }
         },
