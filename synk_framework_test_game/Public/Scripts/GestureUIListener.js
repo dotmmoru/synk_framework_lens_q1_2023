@@ -1,5 +1,6 @@
 // -----JS CODE-----
 //@input Component.ScriptComponent gameController
+//@input SceneObject[] gesturesUIParent
 //@input SceneObject[] gesturesUI
 //@input SceneObject[] gesturesHand
 
@@ -10,9 +11,9 @@ var selectedUI = "";
 
 var asset = 
 {
-	"open": { hand: script.gesturesHand[0] , ui: script.gesturesUI[0], id: 1 }, // papper 
-	"close": { hand: script.gesturesHand[1] , ui: script.gesturesUI[1], id: 0 }, // rock
-	"victory": { hand: script.gesturesHand[2] , ui: script.gesturesUI[2], id: 2 }, // scissors
+	"open": { hand: script.gesturesHand[0] , ui: script.gesturesUI[0], id: 1, uiParent: script.gesturesUIParent[0] }, // papper 
+	"close": { hand: script.gesturesHand[1] , ui: script.gesturesUI[1], id: 0, uiParent: script.gesturesUIParent[1] }, // rock
+	"victory": { hand: script.gesturesHand[2] , ui: script.gesturesUI[2], id: 2, uiParent: script.gesturesUIParent[2] }, // scissors
 }
 
 script.api.IsGestureEnabled = function(value)
@@ -26,6 +27,7 @@ script.api.UnSelectAll = function()
 	for (var i = script.gesturesUI.length - 1; i >= 0; i--) 
 	{
 		global.tweenManager.startTween(script.gesturesUI[i],"init");
+		global.tweenManager.startTween(script.gesturesUIParent[i],"init");
 	}
 }
 
@@ -35,20 +37,22 @@ script.api.GestureDetected = function(g)
 		return;
 
 	script.gameController.api.SelectButton(asset[g].id);
-	PlayUITween(asset[g].ui, g);
+	PlayUITween(asset[g].ui, asset[g].uiParent, g);
 	PlayHandTween(asset[g].hand);
 }
 
-function PlayUITween(obj, key)
+function PlayUITween(obj, objParent ,key)
 {
 	if( key != selectedUI)
 	{			
 		if(selectedUI!="")
 			global.tweenManager.startTween(asset[selectedUI].ui,"hide");
 		global.tweenManager.startTween(obj,"show");
+		global.tweenManager.startTween(objParent,"select");
 		selectedUI = key;
 	}else 
 	{
+		global.tweenManager.startTween(objParent,"select");
 		global.tweenManager.startTween(obj,"show");
 	}
 }

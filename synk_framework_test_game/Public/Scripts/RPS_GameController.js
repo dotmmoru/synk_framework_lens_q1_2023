@@ -2,14 +2,27 @@
 //@input SceneObject readyUI
 //@input SceneObject gameplayUI
 //@input SceneObject gameoverUI
+//@ui {"widget":"separator"}
 //@input Component.Text connectedUsers
+//@ui {"widget":"separator"}
 //@input Component.Text timer
 //@input SceneObject timerTween
-//@input Component.Text gameResult
+//@ui {"widget":"separator"}
+//@input Component.Text whoWinsText
+//@input Component.Text yourFinalScoreText
+//@input Component.Text otherFinalScoreText
+//@ui {"widget":"separator"}
 //@input Component.ScriptComponent otherResult
+//@ui {"widget":"separator"}
 //@input Component.ScriptComponent gestureUIListener
+//@ui {"widget":"separator"}
 //@input Component.ScriptComponent[] buttons
 
+///////////////////////////////////////////////////////
+var gameOverAmount = 3;
+var countdownAmount = 6;
+var resetDone = false;
+var _tempScore = new vec2(0,0);
 ///////////////////////////////////////////////////////
 var syncEntity = new global.SyncEntity(script);
 
@@ -62,15 +75,17 @@ syncEntity.onEventReceived.add("gameplayCheckResult",function()
 	var otherResult = IsMainUser()? otherChoiceProp.currentValue : yourChoiceProp.currentValue;
 	print("otherResult " + otherResult);
 	script.otherResult.api.ShowOtherResult(otherResult);
-	var isGameOver = false
+
 	if(IsMainUser())
 	{
-		isGameOver = HandleResult();
+		var isGameOver = HandleResult();
+		print("IS GAME OVER " + isGameOver);
+		if(isGameOver === true)
+			delay_GameOver.reset(2);
+		else
+			delay_CheckUsersAmount.reset(2);
 	}
-	if(isGameOver)
-		delay_GameOver.reset(2);
-	else
-		delay_CheckUsersAmount.reset(2);
+	
 });
 ///////////////////////////////////////////////////////
 function OnConnectNewUser()
@@ -91,8 +106,6 @@ function UpdateAmountOfConnectedUsers(amount)
 
 function HandleResult()
 {
-	var other = 0;
-	var your = 0;
 	if(yourChoiceProp.currentValue >= 0 && otherChoiceProp.currentValue >= 0)
 	{
 		if(yourChoiceProp.currentValue != otherChoiceProp.currentValue)
@@ -112,13 +125,13 @@ function HandleResult()
 	{
 		if(yourChoiceProp.currentValue >= 0 || otherChoiceProp.currentValue >= 0)
 		{
-			other = otherChoiceProp.currentValue > yourChoiceProp.currentValue ? 1:0;
 			your = otherChoiceProp.currentValue < yourChoiceProp.currentValue ? 1:0;
-			addScore(your,other);
+			other = otherChoiceProp.currentValue > yourChoiceProp.currentValue ? 1:0;
+			_tempScore = addScore(your,other);
 		}
 	}
 
-	return CheckGameOver(your,other);
+	return CheckGameOver(_tempScore.x, _tempScore.y);
 }
 
 function IfVal(a, b, choiceY , choiceO, score) 
@@ -126,14 +139,16 @@ function IfVal(a, b, choiceY , choiceO, score)
 	var result = (choiceY === a && choiceO === b)? true : false;
 	if(result == true)
 	{
-		addScore(score.x, score.y);
+		_tempScore = addScore(score.x, score.y);
 	}
 }
 
 function addScore(yourScore, otherScore) 
 {
-    scoreYourProp.setPendingValue(scoreYourProp.currentValue + yourScore);
-    scoreOtherProp.setPendingValue(scoreOtherProp.currentValue + otherScore);
+	var scoreVec2 = new vec2(scoreYourProp.currentValue + yourScore, scoreOtherProp.currentValue + otherScore);
+    scoreYourProp.setPendingValue(scoreVec2.x);
+    scoreOtherProp.setPendingValue(scoreVec2.y);
+    return scoreVec2;
 }
 
 function CheckGameOver(yourScore, otherScore)
@@ -141,15 +156,16 @@ function CheckGameOver(yourScore, otherScore)
 	return (yourScore >= gameOverAmount || otherScore >= gameOverAmount);
 }
 
+function CheckWhoWinner(yourScore, otherScore )
+{
+	return yourScore > otherScore? yourNameProp.currentValue : otherNameProp.currentValue;
+}
+
 function IsMainUser()
 {
 	return global.getUserName() === yourNameProp.currentValue;
 }
 ///////////////////////////////////////////////////////
-var gameOverAmount = 3;
-var countdownAmount = 6;
-var resetDone = false;
-
 
 function Start()
 {
@@ -178,11 +194,20 @@ function StartGameplay()
 
 function StartGameover()
 {
+	InitGameOverUI();
 	SetEnabledGameUI(false,false,true);
 	ResetChoise();
 	AllowButtonTap(false);
 	UnSelectAllButtons(-1);
 	script.otherResult.api.HideOtherResult();
+}
+
+function InitGameOverUI()
+{
+	var winnerName = CheckWhoWinner(scoreYourProp.currentValue,scoreOtherProp.currentValue);
+	script.whoWinsText.text = winnerName + " WINS!";
+	script.yourFinalScoreText.text = yourNameProp.currentValue+": " + scoreYourProp.currentValue;
+ 	script.otherFinalScoreText.text = otherNameProp.currentValue + ": " + scoreOtherProp.currentValue;
 }
 
 script.api.SelectButton = function(id)
