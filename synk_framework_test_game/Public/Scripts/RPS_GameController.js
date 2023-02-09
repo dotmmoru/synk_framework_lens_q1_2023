@@ -138,7 +138,7 @@ function addScore(yourScore, otherScore)
 
 function CheckGameOver(yourScore, otherScore)
 {
-	return yourScore >= gameOverAmount || otherScore >= gameOverAmount;
+	return (yourScore >= gameOverAmount || otherScore >= gameOverAmount);
 }
 
 function IsMainUser()

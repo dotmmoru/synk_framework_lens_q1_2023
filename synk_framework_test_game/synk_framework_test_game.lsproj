@@ -3,7 +3,7 @@
     "document_id": "gR_5yN57srX9o5ey1ZhU",
     "original_document_id": "gR_5yN57srX9o5ey1ZhU",
     "version": "29",
-    "lastChanged": "1675939327019",
+    "lastChanged": "1675944058381",
     "preview": "icon.png",
     "videoPreview": "preview.mp4",
     "videoPreviewUpdateTime": "",
@@ -39,13 +39,6 @@
                     ],
                     [
                         "Hand Avatar"
-                    ],
-                    [
-                        "Hand Gesture Resources"
-                    ],
-                    [
-                        "Hand Gesture Resources",
-                        "Textures"
                     ],
                     [
                         "Hand Gesture Resources",
@@ -94,6 +87,9 @@
                     ],
                     [
                         "Scene Resources"
+                    ],
+                    [
+                        "Scripts"
                     ],
                     [
                         "Scripts",
@@ -281,8 +277,8 @@
                     "1667249006723119:2262560",
                     "1667249006729644:2262621",
                     "1667249126941673:2521186",
+                    "1675689813955082:449640",
                     "1675691007761852:718347",
-                    "1675691040203317:778963",
                     "1675764018810707:3841352",
                     "1675764160043955:3977274",
                     "1675765894632554:6178927",
@@ -364,7 +360,6 @@
                     "1675765665710342:5825162",
                     "1675852488519254:1798138",
                     "1675852488530074:1798263",
-                    "1675852488532753:1798270",
                     "1675854719261193:3947510",
                     "1675864113623093:559824",
                     "1675864113634240:559949",
@@ -4995,7 +4990,7 @@
                     },
                     {
                         "k": "222",
-                        "v": "63d05347af4fe9ac5c2c4aba8463b4b4"
+                        "v": "69318d84b40c19511f212e5c96271132"
                     },
                     {
                         "k": "223",
@@ -5083,7 +5078,7 @@
                         "isFolder": "true",
                         "lastModified": "2023-02-09T12:15:02",
                         "name": "Public",
-                        "hash": "897dd7d9baccaa7f35a5dda14589b1e8",
+                        "hash": "3bc07403382eff1c89989e533db0d484",
                         "children": [
                             {
                                 "isFolder": "true",
@@ -5636,7 +5631,7 @@
                                 "isFolder": "true",
                                 "lastModified": "2023-02-09T12:15:02",
                                 "name": "Scripts",
-                                "hash": "6d6f5cdbe2d7647633f9dda992e8f1cc",
+                                "hash": "16c0b4edc685e2c4938a49c3aa1e3c06",
                                 "children": [
                                     {
                                         "isFolder": "false",
@@ -5689,9 +5684,9 @@
                                     },
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2023-02-09T12:39:20",
+                                        "lastModified": "2023-02-09T12:43:19",
                                         "name": "RPS_GameController.js",
-                                        "hash": "63d05347af4fe9ac5c2c4aba8463b4b4",
+                                        "hash": "69318d84b40c19511f212e5c96271132",
                                         "children": ""
                                     },
                                     {
@@ -10659,7 +10654,7 @@
         "InspectorController": {
             "selection": {
                 "objects": [
-                    "1675689814012194:449770"
+                    "1675852488505014:1797899"
                 ]
             }
         },
