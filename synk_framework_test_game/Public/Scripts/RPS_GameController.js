@@ -7,6 +7,7 @@
 //@input SceneObject timerTween
 //@input Component.Text gameResult
 //@input Component.ScriptComponent otherResult
+//@input Component.ScriptComponent gestureUIListener
 //@input Component.ScriptComponent[] buttons
 
 ///////////////////////////////////////////////////////
@@ -204,17 +205,20 @@ function ResetChoise()
 
 function AllowButtonTap(allow)
 {
-	for (var i = script.buttons.length - 1; i >= 0; i--) 
-		script.buttons[i].api.IsTapEnabled(allow);
+	//for (var i = script.buttons.length - 1; i >= 0; i--) 
+	//	script.buttons[i].api.IsTapEnabled(allow);
+
+	script.gestureUIListener.api.IsGestureEnabled(allow);
 }
 
 function UnSelectAllButtons(selected)
 {
-	for (var i = script.buttons.length - 1; i >= 0; i--) 
+	script.gestureUIListener.api.UnSelectAll();
+	/*for (var i = script.buttons.length - 1; i >= 0; i--) 
 	{
 		if(selected != i)
 			script.buttons[i].api.UnSelect();
-	}
+	}*/
 }
 
 function GetUserNames()
