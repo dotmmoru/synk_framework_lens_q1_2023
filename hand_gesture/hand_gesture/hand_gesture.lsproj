@@ -3,7 +3,7 @@
     "document_id": "CwC7e0TcdqlWZOtnBKCh",
     "original_document_id": "CwC7e0TcdqlWZOtnBKCh",
     "version": "29",
-    "lastChanged": "1675937175860",
+    "lastChanged": "1675937425344",
     "preview": "icon.png",
     "videoPreview": "preview.mp4",
     "videoPreviewUpdateTime": "",
@@ -32,33 +32,7 @@
             "collapsedList": [
                 [
                     [
-                        "Hand Gesture Resources",
-                        "Sound Effects"
-                    ],
-                    [
-                        "Hand Gesture Resources",
-                        "Sound Effects",
-                        "Clap"
-                    ],
-                    [
-                        "Hand Gesture Resources",
-                        "Sound Effects",
-                        "Horn"
-                    ],
-                    [
-                        "Hand Gesture Resources",
-                        "Sound Effects",
-                        "Kick"
-                    ],
-                    [
-                        "Hand Gesture Resources",
-                        "Sound Effects",
-                        "Snare"
-                    ],
-                    [
-                        "Hand Gesture Resources",
-                        "Sound Effects",
-                        "Woo"
+                        "Hand Gesture Resources"
                     ],
                     [
                         "Hand Gesture Resources",
@@ -90,16 +64,6 @@
                     [
                         "Prefabs",
                         "Bottom UI Prefabs",
-                        "Panel Horns Clone"
-                    ],
-                    [
-                        "Prefabs",
-                        "Bottom UI Prefabs",
-                        "Panel Index Finger Clone"
-                    ],
-                    [
-                        "Prefabs",
-                        "Bottom UI Prefabs",
                         "Panel Open Clone"
                     ],
                     [
@@ -113,19 +77,14 @@
                     ],
                     [
                         "Prefabs",
-                        "Hand Horns Clone"
-                    ],
-                    [
-                        "Prefabs",
-                        "Hand Index Finger Clone"
-                    ],
-                    [
-                        "Prefabs",
                         "Hand Open Clone"
                     ],
                     [
                         "Prefabs",
                         "Hand Victory Clone"
+                    ],
+                    [
+                        "Scripts"
                     ],
                     [
                         "Scripts",
@@ -179,11 +138,6 @@
                     [
                         "Tween",
                         "TweenTypes",
-                        "TweenColor"
-                    ],
-                    [
-                        "Tween",
-                        "TweenTypes",
                         "TweenScreenTransform"
                     ]
                 ]
@@ -196,6 +150,7 @@
                     "1583176399752104:22901522",
                     "1583176399752551:22901524",
                     "1583176401059949:22902718",
+                    "1583176544873178:22905570",
                     "1583177615911994:23030823",
                     "1583184902114574:23235456",
                     "1583184977863969:23266868",
@@ -206,7 +161,8 @@
                     "1583284894143216:4688880",
                     "1583284897661044:4704000",
                     "1583534492924923:1015719",
-                    "1583540416303107:1190368"
+                    "1583540416303107:1190368",
+                    "1675933609660563:1221375"
                 ]
             ],
             "selectionSetList": ""
@@ -347,14 +303,6 @@
                     "flags": "1"
                 },
                 {
-                    "resId": "14",
-                    "uid": "1583176398306642:22901319",
-                    "name": "Files\/File8.js",
-                    "sourceFilePath": "",
-                    "additionalProperties": "",
-                    "flags": "1"
-                },
-                {
                     "resId": "15",
                     "uid": "1583176398363787:22901331",
                     "name": "Files\/File9.js",
@@ -395,22 +343,6 @@
                     "flags": "0"
                 },
                 {
-                    "resId": "39",
-                    "uid": "1583185216785533:23360818",
-                    "name": "Horns Clone",
-                    "sourceFilePath": "",
-                    "additionalProperties": "",
-                    "flags": "0"
-                },
-                {
-                    "resId": "40",
-                    "uid": "1583185219093236:23364304",
-                    "name": "One Finger Clone",
-                    "sourceFilePath": "",
-                    "additionalProperties": "",
-                    "flags": "0"
-                },
-                {
                     "resId": "41",
                     "uid": "1583185221231783:23367798",
                     "name": "Victory Clone",
@@ -435,22 +367,6 @@
                     "flags": "0"
                 },
                 {
-                    "resId": "44",
-                    "uid": "1583185778951236:254492",
-                    "name": "Open Horns Clone",
-                    "sourceFilePath": "",
-                    "additionalProperties": "",
-                    "flags": "0"
-                },
-                {
-                    "resId": "45",
-                    "uid": "1583185780810654:259472",
-                    "name": "Open One Finger Clone",
-                    "sourceFilePath": "",
-                    "additionalProperties": "",
-                    "flags": "0"
-                },
-                {
                     "resId": "48",
                     "uid": "1583259851796589:961507",
                     "name": "Files\/File65",
@@ -462,14 +378,6 @@
                     "resId": "49",
                     "uid": "1583259851868025:961516",
                     "name": "Files\/File66.png",
-                    "sourceFilePath": "",
-                    "additionalProperties": "",
-                    "flags": "1"
-                },
-                {
-                    "resId": "50",
-                    "uid": "1583259851911345:961523",
-                    "name": "Files\/File68.png",
                     "sourceFilePath": "",
                     "additionalProperties": "",
                     "flags": "1"
@@ -515,14 +423,6 @@
                     "flags": "1"
                 },
                 {
-                    "resId": "56",
-                    "uid": "1583259852325398:961573",
-                    "name": "Files\/File78.png",
-                    "sourceFilePath": "",
-                    "additionalProperties": "",
-                    "flags": "1"
-                },
-                {
                     "resId": "57",
                     "uid": "1583259852406993:961582",
                     "name": "Files\/File80",
@@ -542,14 +442,6 @@
                     "resId": "59",
                     "uid": "1583259852470157:961598",
                     "name": "Files\/File83.png",
-                    "sourceFilePath": "",
-                    "additionalProperties": "",
-                    "flags": "1"
-                },
-                {
-                    "resId": "61",
-                    "uid": "1583259852522561:961612",
-                    "name": "Files\/File87.png",
                     "sourceFilePath": "",
                     "additionalProperties": "",
                     "flags": "1"
@@ -590,54 +482,6 @@
                     "resId": "69",
                     "uid": "1583354743667158:5245327",
                     "name": "Files\/File102.png",
-                    "sourceFilePath": "",
-                    "additionalProperties": "",
-                    "flags": "1"
-                },
-                {
-                    "resId": "70",
-                    "uid": "1583361612240808:7936981",
-                    "name": "Files\/File104.js",
-                    "sourceFilePath": "",
-                    "additionalProperties": "",
-                    "flags": "1"
-                },
-                {
-                    "resId": "76",
-                    "uid": "1583534205010392:491737",
-                    "name": "Files\/File110.mp3",
-                    "sourceFilePath": "",
-                    "additionalProperties": "",
-                    "flags": "1"
-                },
-                {
-                    "resId": "77",
-                    "uid": "1583534205059018:491749",
-                    "name": "Files\/File111.mp3",
-                    "sourceFilePath": "",
-                    "additionalProperties": "",
-                    "flags": "1"
-                },
-                {
-                    "resId": "78",
-                    "uid": "1583534205100937:491761",
-                    "name": "Files\/File112.mp3",
-                    "sourceFilePath": "",
-                    "additionalProperties": "",
-                    "flags": "1"
-                },
-                {
-                    "resId": "79",
-                    "uid": "1583534205178701:491773",
-                    "name": "Files\/File113.mp3",
-                    "sourceFilePath": "",
-                    "additionalProperties": "",
-                    "flags": "1"
-                },
-                {
-                    "resId": "80",
-                    "uid": "1583534205291309:491785",
-                    "name": "Files\/File114.mp3",
                     "sourceFilePath": "",
                     "additionalProperties": "",
                     "flags": "1"
@@ -938,10 +782,6 @@
                     "v": "Files\/File5.js"
                 },
                 {
-                    "k": "8",
-                    "v": "Files\/File8.js"
-                },
-                {
                     "k": "9",
                     "v": "Files\/File9.js"
                 },
@@ -966,22 +806,6 @@
                     "v": "Files\/File47.oprfb"
                 },
                 {
-                    "k": "48",
-                    "v": "Files\/File48.oprfb"
-                },
-                {
-                    "k": "49",
-                    "v": "Files\/File49.oprfb"
-                },
-                {
-                    "k": "50",
-                    "v": "Files\/File50.oprfb"
-                },
-                {
-                    "k": "51",
-                    "v": "Files\/File51.oprfb"
-                },
-                {
                     "k": "52",
                     "v": "Files\/File52.oprfb"
                 },
@@ -1002,22 +826,6 @@
                     "v": "Files\/File56.oprfb"
                 },
                 {
-                    "k": "57",
-                    "v": "Files\/File57.oprfb"
-                },
-                {
-                    "k": "58",
-                    "v": "Files\/File58.oprfb"
-                },
-                {
-                    "k": "59",
-                    "v": "Files\/File59.oprfb"
-                },
-                {
-                    "k": "60",
-                    "v": "Files\/File60.oprfb"
-                },
-                {
                     "k": "65",
                     "v": "Files\/File65"
                 },
@@ -1028,14 +836,6 @@
                 {
                     "k": "67",
                     "v": "Files\/File67.png"
-                },
-                {
-                    "k": "68",
-                    "v": "Files\/File68.pvr"
-                },
-                {
-                    "k": "69",
-                    "v": "Files\/File69.png"
                 },
                 {
                     "k": "70",
@@ -1070,14 +870,6 @@
                     "v": "Files\/File77.png"
                 },
                 {
-                    "k": "78",
-                    "v": "Files\/File78.pvr"
-                },
-                {
-                    "k": "79",
-                    "v": "Files\/File79.png"
-                },
-                {
                     "k": "80",
                     "v": "Files\/File80"
                 },
@@ -1096,14 +888,6 @@
                 {
                     "k": "84",
                     "v": "Files\/File84.png"
-                },
-                {
-                    "k": "87",
-                    "v": "Files\/File87.png"
-                },
-                {
-                    "k": "88",
-                    "v": "Files\/File88.png"
                 },
                 {
                     "k": "89",
@@ -1142,30 +926,6 @@
                     "v": "Files\/File103.png"
                 },
                 {
-                    "k": "104",
-                    "v": "Files\/File104.js"
-                },
-                {
-                    "k": "110",
-                    "v": "Files\/File110.mp3"
-                },
-                {
-                    "k": "111",
-                    "v": "Files\/File111.mp3"
-                },
-                {
-                    "k": "112",
-                    "v": "Files\/File112.mp3"
-                },
-                {
-                    "k": "113",
-                    "v": "Files\/File113.mp3"
-                },
-                {
-                    "k": "114",
-                    "v": "Files\/File114.mp3"
-                },
-                {
                     "k": "140",
                     "v": "Files\/File140.jpeg"
                 },
@@ -1202,10 +962,6 @@
                     "v": "Files\/File148.png"
                 },
                 {
-                    "k": "149",
-                    "v": "Files\/File149.png"
-                },
-                {
                     "k": "150",
                     "v": "Files\/File150"
                 },
@@ -1224,10 +980,6 @@
                 {
                     "k": "154",
                     "v": "Files\/File154.png"
-                },
-                {
-                    "k": "155",
-                    "v": "Files\/File155.png"
                 },
                 {
                     "k": "156",
@@ -1274,10 +1026,6 @@
                     "v": "Files\/File166"
                 },
                 {
-                    "k": "167",
-                    "v": "Files\/File167.pvr"
-                },
-                {
                     "k": "168",
                     "v": "Files\/File168.pvr"
                 },
@@ -1296,10 +1044,6 @@
                 {
                     "k": "172",
                     "v": "Files\/File172.pvr"
-                },
-                {
-                    "k": "173",
-                    "v": "Files\/File173.pvr"
                 },
                 {
                     "k": "174",
@@ -1363,10 +1107,6 @@
                         "v": "Tween\/TweenManager.js"
                     },
                     {
-                        "k": "348",
-                        "v": "Tween\/TweenTypes\/TweenColor.js"
-                    },
-                    {
                         "k": "349",
                         "v": "Tween\/TweenTypes\/TweenAlpha.js"
                     },
@@ -1387,14 +1127,6 @@
                         "v": "Prefabs\/Bottom UI Prefabs\/Panel Open Clone.oprfb"
                     },
                     {
-                        "k": "377",
-                        "v": "Prefabs\/Bottom UI Prefabs\/Panel Horns Clone.oprfb"
-                    },
-                    {
-                        "k": "378",
-                        "v": "Prefabs\/Bottom UI Prefabs\/Panel Index Finger Clone.oprfb"
-                    },
-                    {
                         "k": "379",
                         "v": "Prefabs\/Bottom UI Prefabs\/Panel Victory Clone.oprfb"
                     },
@@ -1405,14 +1137,6 @@
                     {
                         "k": "381",
                         "v": "Prefabs\/Hand Open Clone.oprfb"
-                    },
-                    {
-                        "k": "382",
-                        "v": "Prefabs\/Hand Horns Clone.oprfb"
-                    },
-                    {
-                        "k": "383",
-                        "v": "Prefabs\/Hand Index Finger Clone.oprfb"
                     },
                     {
                         "k": "385",
@@ -1435,10 +1159,6 @@
                         "v": "Hand Gesture Resources\/Textures\/Horn-Fill.png"
                     },
                     {
-                        "k": "395",
-                        "v": "Hand Gesture Resources\/Textures\/Horn-Outline.png"
-                    },
-                    {
                         "k": "396",
                         "v": "Hand Gesture Resources\/Textures\/Open"
                     },
@@ -1459,10 +1179,6 @@
                         "v": "Hand Gesture Resources\/Textures\/Index-Finger-Fill.png"
                     },
                     {
-                        "k": "401",
-                        "v": "Hand Gesture Resources\/Textures\/Index-Finger-Outline.png"
-                    },
-                    {
                         "k": "402",
                         "v": "Hand Gesture Resources\/Textures\/Victory"
                     },
@@ -1473,10 +1189,6 @@
                     {
                         "k": "404",
                         "v": "Hand Gesture Resources\/Textures\/Victory-Outline.png"
-                    },
-                    {
-                        "k": "406",
-                        "v": "Hand Gesture Resources\/Textures\/white.png"
                     },
                     {
                         "k": "409",
@@ -1503,40 +1215,8 @@
                         "v": "Hand Gesture Resources\/Textures\/Close-Fill.png"
                     },
                     {
-                        "k": "456",
-                        "v": "Scripts\/ReparentHelper.js"
-                    },
-                    {
-                        "k": "458",
-                        "v": "Tween\/TweenTypes\/Legacy"
-                    },
-                    {
                         "k": "459",
                         "v": "Prefabs\/Bottom UI Prefabs"
-                    },
-                    {
-                        "k": "465",
-                        "v": "Hand Gesture Resources\/Sound Effects\/Clap.mp3"
-                    },
-                    {
-                        "k": "466",
-                        "v": "Hand Gesture Resources\/Sound Effects\/Snare.mp3"
-                    },
-                    {
-                        "k": "467",
-                        "v": "Hand Gesture Resources\/Sound Effects\/Kick.mp3"
-                    },
-                    {
-                        "k": "468",
-                        "v": "Hand Gesture Resources\/Sound Effects\/Woo.mp3"
-                    },
-                    {
-                        "k": "469",
-                        "v": "Hand Gesture Resources\/Sound Effects\/Horn.mp3"
-                    },
-                    {
-                        "k": "470",
-                        "v": "Hand Gesture Resources\/Sound Effects"
                     },
                     {
                         "k": "482",
@@ -1926,7 +1606,7 @@
                         "isFolder": "true",
                         "lastModified": "2023-02-09T10:37:03",
                         "name": "Public",
-                        "hash": "2edc683916ce11138a6160d42d190766",
+                        "hash": "325111517d2008608f8eb4e490d0f969",
                         "children": [
                             {
                                 "isFolder": "false",
@@ -1937,9 +1617,9 @@
                             },
                             {
                                 "isFolder": "true",
-                                "lastModified": "2023-02-09T10:37:03",
+                                "lastModified": "2023-02-09T12:10:15",
                                 "name": "Hand Gesture Resources",
-                                "hash": "e1d7c9fd95566b871ea9394014a3d636",
+                                "hash": "dc2d8b9a7056a5d4fea6b750a54b0df7",
                                 "children": [
                                     {
                                         "isFolder": "false",
@@ -1950,59 +1630,9 @@
                                     },
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2023-02-09T10:37:03",
-                                        "name": "Sound Effects",
-                                        "hash": "3cb758c8ed557645bdf3af9c6326355d",
-                                        "children": [
-                                            {
-                                                "isFolder": "false",
-                                                "lastModified": "2023-02-09T10:03:40",
-                                                "name": "Clap.mp3",
-                                                "hash": "cbcdbb1cb0e55d98ce60d1f1502501d0",
-                                                "children": ""
-                                            },
-                                            {
-                                                "isFolder": "false",
-                                                "lastModified": "2023-02-09T10:03:40",
-                                                "name": "folder.lock",
-                                                "hash": "d41d8cd98f00b204e9800998ecf8427e",
-                                                "children": ""
-                                            },
-                                            {
-                                                "isFolder": "false",
-                                                "lastModified": "2023-02-09T10:03:40",
-                                                "name": "Horn.mp3",
-                                                "hash": "10961c96fd66a141f0466d7338bd4769",
-                                                "children": ""
-                                            },
-                                            {
-                                                "isFolder": "false",
-                                                "lastModified": "2023-02-09T10:03:40",
-                                                "name": "Kick.mp3",
-                                                "hash": "b4bbcb895faf5420b557e7424aa9b65c",
-                                                "children": ""
-                                            },
-                                            {
-                                                "isFolder": "false",
-                                                "lastModified": "2023-02-09T10:03:40",
-                                                "name": "Snare.mp3",
-                                                "hash": "caf96dc683e04396249453e62380055d",
-                                                "children": ""
-                                            },
-                                            {
-                                                "isFolder": "false",
-                                                "lastModified": "2023-02-09T10:03:40",
-                                                "name": "Woo.mp3",
-                                                "hash": "175f3ad0492d0e268d21194db1a751e4",
-                                                "children": ""
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "isFolder": "true",
-                                        "lastModified": "2023-02-09T10:37:03",
+                                        "lastModified": "2023-02-09T12:10:14",
                                         "name": "Textures",
-                                        "hash": "57d9c6ab2987a2376e76e30ebd438608",
+                                        "hash": "98c68556acdaf3003d93e10c7fc6bb2d",
                                         "children": [
                                             {
                                                 "isFolder": "true",
@@ -2077,13 +1707,6 @@
                                                 "children": ""
                                             },
                                             {
-                                                "isFolder": "false",
-                                                "lastModified": "2023-02-09T10:03:40",
-                                                "name": "Horn-Outline.png",
-                                                "hash": "227d014e064256b3b1766aa7215c13f6",
-                                                "children": ""
-                                            },
-                                            {
                                                 "isFolder": "true",
                                                 "lastModified": "2023-02-09T10:37:03",
                                                 "name": "Index-Finger",
@@ -2110,13 +1733,6 @@
                                                 "lastModified": "2023-02-09T10:03:40",
                                                 "name": "Index-Finger-Fill.png",
                                                 "hash": "6bc9d831e2ee03244f88e52b5fc8044c",
-                                                "children": ""
-                                            },
-                                            {
-                                                "isFolder": "false",
-                                                "lastModified": "2023-02-09T10:03:40",
-                                                "name": "Index-Finger-Outline.png",
-                                                "hash": "a1deae04485e58c9fb75aa5117225689",
                                                 "children": ""
                                             },
                                             {
@@ -2190,13 +1806,6 @@
                                                 "name": "Victory-Outline.png",
                                                 "hash": "14d5cfb934a69c02a8cae8b3c7f48a23",
                                                 "children": ""
-                                            },
-                                            {
-                                                "isFolder": "false",
-                                                "lastModified": "2023-02-09T10:03:40",
-                                                "name": "white.png",
-                                                "hash": "0c8dcfed2f50bb81ac5276a14967c005",
-                                                "children": ""
                                             }
                                         ]
                                     }
@@ -2204,15 +1813,15 @@
                             },
                             {
                                 "isFolder": "true",
-                                "lastModified": "2023-02-09T11:38:19",
+                                "lastModified": "2023-02-09T12:10:14",
                                 "name": "Prefabs",
-                                "hash": "8460709302741e5f350c125f4eef9e2e",
+                                "hash": "8de0a8a9b9dee3f804ca365cf2bea532",
                                 "children": [
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2023-02-09T11:17:11",
+                                        "lastModified": "2023-02-09T12:10:14",
                                         "name": "Bottom UI Prefabs",
-                                        "hash": "96450a97d2a583508c9a04610c2dfab7",
+                                        "hash": "c2a12378c2617f8637b99c72c03c8e8e",
                                         "children": [
                                             {
                                                 "isFolder": "false",
@@ -2226,20 +1835,6 @@
                                                 "lastModified": "2023-02-09T10:03:54",
                                                 "name": "Panel Close Clone.oprfb",
                                                 "hash": "e99b4c8bb88c192871a3ac2e8af6f897",
-                                                "children": ""
-                                            },
-                                            {
-                                                "isFolder": "false",
-                                                "lastModified": "2023-02-09T10:03:40",
-                                                "name": "Panel Horns Clone.oprfb",
-                                                "hash": "df641aa97a1e10471f5b1430ac7c02ee",
-                                                "children": ""
-                                            },
-                                            {
-                                                "isFolder": "false",
-                                                "lastModified": "2023-02-09T10:03:40",
-                                                "name": "Panel Index Finger Clone.oprfb",
-                                                "hash": "b617c1cfdc18e9ae1757a74a8916109d",
                                                 "children": ""
                                             },
                                             {
@@ -2274,20 +1869,6 @@
                                     },
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2023-02-09T10:03:40",
-                                        "name": "Hand Horns Clone.oprfb",
-                                        "hash": "55b81573e96f71e791b90e9ac21d5f3f",
-                                        "children": ""
-                                    },
-                                    {
-                                        "isFolder": "false",
-                                        "lastModified": "2023-02-09T10:03:40",
-                                        "name": "Hand Index Finger Clone.oprfb",
-                                        "hash": "7dbeacbdd5cfe9de4707101ca084add4",
-                                        "children": ""
-                                    },
-                                    {
-                                        "isFolder": "false",
                                         "lastModified": "2023-02-09T10:03:52",
                                         "name": "Hand Open Clone.oprfb",
                                         "hash": "2b53ac0d0e08e146d194bfb751cf9159",
@@ -2304,9 +1885,9 @@
                             },
                             {
                                 "isFolder": "true",
-                                "lastModified": "2023-02-09T11:02:31",
+                                "lastModified": "2023-02-09T12:10:14",
                                 "name": "Scripts",
-                                "hash": "b566ae38168e990874d7bef127408da9",
+                                "hash": "f6976c45a62cc693ae2d0000940b700a",
                                 "children": [
                                     {
                                         "isFolder": "false",
@@ -2342,13 +1923,6 @@
                                         "name": "MaterialDuplicator.js",
                                         "hash": "78f5a03ace310db5e3fc8f420e21632d",
                                         "children": ""
-                                    },
-                                    {
-                                        "isFolder": "false",
-                                        "lastModified": "2023-02-09T10:03:40",
-                                        "name": "ReparentHelper.js",
-                                        "hash": "454e1ec3906501454f07c98de10e7b50",
-                                        "children": ""
                                     }
                                 ]
                             },
@@ -2378,7 +1952,7 @@
                                 "isFolder": "true",
                                 "lastModified": "2023-02-09T10:37:03",
                                 "name": "Tween",
-                                "hash": "913d55cf080a5ead23b08b2417df97fb",
+                                "hash": "82cbc5eea25014edf2bece81e67c89ba",
                                 "children": [
                                     {
                                         "isFolder": "false",
@@ -2403,9 +1977,9 @@
                                     },
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2023-02-09T10:37:03",
+                                        "lastModified": "2023-02-09T12:10:15",
                                         "name": "TweenTypes",
-                                        "hash": "9be5a23bd6097ddc7b21ebfdb922de5c",
+                                        "hash": "ef272131a585c39872209b1335764a16",
                                         "children": [
                                             {
                                                 "isFolder": "false",
@@ -2415,32 +1989,10 @@
                                                 "children": ""
                                             },
                                             {
-                                                "isFolder": "true",
-                                                "lastModified": "2023-02-09T10:37:03",
-                                                "name": "Legacy",
-                                                "hash": "59adb24ef3cdbe0297f05b395827453f",
-                                                "children": [
-                                                    {
-                                                        "isFolder": "false",
-                                                        "lastModified": "2023-02-09T10:03:40",
-                                                        "name": "folder.lock",
-                                                        "hash": "d41d8cd98f00b204e9800998ecf8427e",
-                                                        "children": ""
-                                                    }
-                                                ]
-                                            },
-                                            {
                                                 "isFolder": "false",
                                                 "lastModified": "2023-02-09T10:03:40",
                                                 "name": "TweenAlpha.js",
                                                 "hash": "727c7e4c704f936aea788aa6fceeb329",
-                                                "children": ""
-                                            },
-                                            {
-                                                "isFolder": "false",
-                                                "lastModified": "2023-02-09T10:03:40",
-                                                "name": "TweenColor.js",
-                                                "hash": "e9e2ba6730d762b98ec75bee60c2280c",
                                                 "children": ""
                                             },
                                             {
@@ -2508,34 +2060,6 @@
                                 "additional": ""
                             },
                             {
-                                "name": "Hand Horns Clone",
-                                "type": "12",
-                                "subtype": "-1",
-                                "resourceId": "44",
-                                "dependency": "0",
-                                "hidden": "false",
-                                "uid": "1583185778951236:254492",
-                                "fileId": "57",
-                                "originalId": "58",
-                                "publicId": "382",
-                                "source": "",
-                                "additional": ""
-                            },
-                            {
-                                "name": "Hand Index Finger Clone",
-                                "type": "12",
-                                "subtype": "-1",
-                                "resourceId": "45",
-                                "dependency": "0",
-                                "hidden": "false",
-                                "uid": "1583185780810654:259472",
-                                "fileId": "59",
-                                "originalId": "60",
-                                "publicId": "383",
-                                "source": "",
-                                "additional": ""
-                            },
-                            {
                                 "name": "Hand Close Clone",
                                 "type": "12",
                                 "subtype": "-1",
@@ -2588,34 +2112,6 @@
                                         "fileId": "46",
                                         "originalId": "47",
                                         "publicId": "376",
-                                        "source": "",
-                                        "additional": ""
-                                    },
-                                    {
-                                        "name": "Panel Horns Clone",
-                                        "type": "12",
-                                        "subtype": "-1",
-                                        "resourceId": "39",
-                                        "dependency": "0",
-                                        "hidden": "false",
-                                        "uid": "1583185216785533:23360818",
-                                        "fileId": "48",
-                                        "originalId": "49",
-                                        "publicId": "377",
-                                        "source": "",
-                                        "additional": ""
-                                    },
-                                    {
-                                        "name": "Panel Index Finger Clone",
-                                        "type": "12",
-                                        "subtype": "-1",
-                                        "resourceId": "40",
-                                        "dependency": "0",
-                                        "hidden": "false",
-                                        "uid": "1583185219093236:23364304",
-                                        "fileId": "50",
-                                        "originalId": "51",
-                                        "publicId": "378",
                                         "source": "",
                                         "additional": ""
                                     },
@@ -2694,20 +2190,6 @@
                                 "additional": ""
                             },
                             {
-                                "name": "ReparentHelper",
-                                "type": "4",
-                                "subtype": "0",
-                                "resourceId": "70",
-                                "dependency": "0",
-                                "hidden": "false",
-                                "uid": "1583361612240808:7936981",
-                                "fileId": "104",
-                                "originalId": "18446744073709551615",
-                                "publicId": "456",
-                                "source": "",
-                                "additional": ""
-                            },
-                            {
                                 "name": "Behavior",
                                 "type": "4",
                                 "subtype": "0",
@@ -2780,20 +2262,6 @@
                                 "additional": "",
                                 "resources": [
                                     {
-                                        "name": "TweenColor",
-                                        "type": "4",
-                                        "subtype": "0",
-                                        "resourceId": "14",
-                                        "dependency": "0",
-                                        "hidden": "false",
-                                        "uid": "1583176398306642:22901319",
-                                        "fileId": "8",
-                                        "originalId": "18446744073709551615",
-                                        "publicId": "348",
-                                        "source": "",
-                                        "additional": ""
-                                    },
-                                    {
                                         "name": "TweenAlpha",
                                         "type": "4",
                                         "subtype": "0",
@@ -2820,21 +2288,6 @@
                                         "publicId": "356",
                                         "source": "",
                                         "additional": ""
-                                    },
-                                    {
-                                        "name": "Legacy",
-                                        "type": "0",
-                                        "subtype": "-1",
-                                        "resourceId": "-1",
-                                        "dependency": "0",
-                                        "hidden": "false",
-                                        "uid": "-1:-1",
-                                        "fileId": "18446744073709551615",
-                                        "originalId": "18446744073709551615",
-                                        "publicId": "458",
-                                        "source": "",
-                                        "additional": "",
-                                        "resources": ""
                                     }
                                 ]
                             },
@@ -2911,20 +2364,6 @@
                                         "additional": ""
                                     },
                                     {
-                                        "name": "Horn-Outline",
-                                        "type": "1",
-                                        "subtype": "9",
-                                        "resourceId": "50",
-                                        "dependency": "0",
-                                        "hidden": "false",
-                                        "uid": "1583259851911345:961523",
-                                        "fileId": "68",
-                                        "originalId": "69",
-                                        "publicId": "395",
-                                        "source": "",
-                                        "additional": ""
-                                    },
-                                    {
                                         "name": "Open",
                                         "type": "1",
                                         "subtype": "5",
@@ -2995,20 +2434,6 @@
                                         "additional": ""
                                     },
                                     {
-                                        "name": "Index-Finger-Outline",
-                                        "type": "1",
-                                        "subtype": "9",
-                                        "resourceId": "56",
-                                        "dependency": "0",
-                                        "hidden": "false",
-                                        "uid": "1583259852325398:961573",
-                                        "fileId": "78",
-                                        "originalId": "79",
-                                        "publicId": "401",
-                                        "source": "",
-                                        "additional": ""
-                                    },
-                                    {
                                         "name": "Victory",
                                         "type": "1",
                                         "subtype": "5",
@@ -3051,20 +2476,6 @@
                                         "additional": ""
                                     },
                                     {
-                                        "name": "white",
-                                        "type": "1",
-                                        "subtype": "9",
-                                        "resourceId": "61",
-                                        "dependency": "0",
-                                        "hidden": "false",
-                                        "uid": "1583259852522561:961612",
-                                        "fileId": "87",
-                                        "originalId": "88",
-                                        "publicId": "406",
-                                        "source": "",
-                                        "additional": ""
-                                    },
-                                    {
                                         "name": "Close",
                                         "type": "1",
                                         "subtype": "5",
@@ -3103,92 +2514,6 @@
                                         "fileId": "102",
                                         "originalId": "103",
                                         "publicId": "435",
-                                        "source": "",
-                                        "additional": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "name": "Sound Effects",
-                                "type": "0",
-                                "subtype": "-1",
-                                "resourceId": "-1",
-                                "dependency": "0",
-                                "hidden": "false",
-                                "uid": "-1:-1",
-                                "fileId": "18446744073709551615",
-                                "originalId": "18446744073709551615",
-                                "publicId": "470",
-                                "source": "",
-                                "additional": "",
-                                "resources": [
-                                    {
-                                        "name": "Clap",
-                                        "type": "5",
-                                        "subtype": "0",
-                                        "resourceId": "76",
-                                        "dependency": "0",
-                                        "hidden": "false",
-                                        "uid": "1583534205010392:491737",
-                                        "fileId": "110",
-                                        "originalId": "18446744073709551615",
-                                        "publicId": "465",
-                                        "source": "",
-                                        "additional": ""
-                                    },
-                                    {
-                                        "name": "Snare",
-                                        "type": "5",
-                                        "subtype": "0",
-                                        "resourceId": "77",
-                                        "dependency": "0",
-                                        "hidden": "false",
-                                        "uid": "1583534205059018:491749",
-                                        "fileId": "111",
-                                        "originalId": "18446744073709551615",
-                                        "publicId": "466",
-                                        "source": "",
-                                        "additional": ""
-                                    },
-                                    {
-                                        "name": "Kick",
-                                        "type": "5",
-                                        "subtype": "0",
-                                        "resourceId": "78",
-                                        "dependency": "0",
-                                        "hidden": "false",
-                                        "uid": "1583534205100937:491761",
-                                        "fileId": "112",
-                                        "originalId": "18446744073709551615",
-                                        "publicId": "467",
-                                        "source": "",
-                                        "additional": ""
-                                    },
-                                    {
-                                        "name": "Woo",
-                                        "type": "5",
-                                        "subtype": "0",
-                                        "resourceId": "79",
-                                        "dependency": "0",
-                                        "hidden": "false",
-                                        "uid": "1583534205178701:491773",
-                                        "fileId": "113",
-                                        "originalId": "18446744073709551615",
-                                        "publicId": "468",
-                                        "source": "",
-                                        "additional": ""
-                                    },
-                                    {
-                                        "name": "Horn",
-                                        "type": "5",
-                                        "subtype": "0",
-                                        "resourceId": "80",
-                                        "dependency": "0",
-                                        "hidden": "false",
-                                        "uid": "1583534205291309:491785",
-                                        "fileId": "114",
-                                        "originalId": "18446744073709551615",
-                                        "publicId": "469",
                                         "source": "",
                                         "additional": ""
                                     }
@@ -3304,7 +2629,8 @@
         "InspectorController": {
             "selection": {
                 "objects": [
-                    "1596146651172239:4136069"
+                    "1583176544873178:22905570",
+                    "1675933609660563:1221375"
                 ]
             }
         },
@@ -3615,34 +2941,6 @@
                     }
                 },
                 {
-                    "k": "1583259851911345:961523",
-                    "v": {
-                        "infos": {
-                            "originalSize": "7608",
-                            "compressedSize": "8896",
-                            "originalRAM": "262144",
-                            "compressedRAM": "32768",
-                            "extension": "png",
-                            "settings": {
-                                "isCompressed": "true",
-                                "level": "2",
-                                "type": "1",
-                                "subtype": "9"
-                            }
-                        },
-                        "uncompressed_file": "149",
-                        "compressed_files": [
-                            {
-                                "k": {
-                                    "uncompressed_hash": "227d014e064256b3b1766aa7215c13f6",
-                                    "settings_hash": "2049"
-                                },
-                                "v": "167"
-                            }
-                        ]
-                    }
-                },
-                {
                     "k": "1583259852001309:961532",
                     "v": {
                         "infos": {
@@ -3778,34 +3076,6 @@
                                     "settings_hash": "2049"
                                 },
                                 "v": "172"
-                            }
-                        ]
-                    }
-                },
-                {
-                    "k": "1583259852325398:961573",
-                    "v": {
-                        "infos": {
-                            "originalSize": "6891",
-                            "compressedSize": "7851",
-                            "originalRAM": "262144",
-                            "compressedRAM": "32768",
-                            "extension": "png",
-                            "settings": {
-                                "isCompressed": "true",
-                                "level": "2",
-                                "type": "1",
-                                "subtype": "9"
-                            }
-                        },
-                        "uncompressed_file": "155",
-                        "compressed_files": [
-                            {
-                                "k": {
-                                    "uncompressed_hash": "a1deae04485e58c9fb75aa5117225689",
-                                    "settings_hash": "2049"
-                                },
-                                "v": "173"
                             }
                         ]
                     }
